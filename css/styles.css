@@ -1,20 +1,40 @@
 
 body{
-	font-size: 16px;
+	
 	font-family: 'Roboto Condensed', sans-serif; 
-	background: #233d58;
+	background: #D5EAFF;
 	position: relative;
 }
 
 header{
-	background:purple;
+	background: #233d58;
+	margin-top: 0px;
+
 }
 
+#titulo{
+	font-size: 20px;
+	color: white;
+}
 
+#titulo_resaltado{
+	color: #f1d600;
+}
 
+#subtitulo{
+	color: #f1d600;
+	font-size: 12px;
 
+	
+}
 
+#subtitulo_detalle{
+	color: white;
+}
 
+#menu{
+	display: none;
+}
 
 
 
