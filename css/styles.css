@@ -3,4 +3,23 @@ body{
 	font-size: 16px;
 	font-family: 'Roboto Condensed', sans-serif; 
 	background: #233d58;
+	position: relative;
 }
+
+/*----POR DEFECTO, EL RESPONSIVE DESIGN ES MOBILE FIRST----*/
+
+
+/*medidas para tablet*/
+@media screen and (min-width: 480px){
+	body{
+		background : green;
+	}
+}
+
+/*medidas para pc de sobremesa*/
+@media screen and (min-width: 1000px){
+	body{
+		background : orange;
+	}
+}
+
