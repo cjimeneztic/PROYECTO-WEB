@@ -1,11 +1,12 @@
 body{
 	
-	font-family: ' Condensed', sans-serif; 
+	font-family: 'Oswald', sans-serif;
 	background: #D5EAFF;
-	
-
 }
 
+footer{
+	font-family: 'Oswald', sans-serif;
+}
 header{
 	/*background: #233d58;*/
 	position: 100%;
@@ -43,7 +44,6 @@ h4{
 	font-size: 15px;
 	color: #233d58;
 
-
 }
 
 #titulo{
@@ -78,18 +78,13 @@ h4{
 
 
 
-
-
-
-
-
 /*----POR DEFECTO, EL RESPONSIVE DESIGN ES MOBILE FIRST----*/
 
 
 /*medidas para tablet*/
 @media screen and (min-width: 480px){
 	body{
-		background : green;
+		background : rgb(20%, 30%, 50%);
 	}
 	li{
 		display: inline;
