@@ -47,7 +47,7 @@ h4{
 }
 
 #titulo{
-	font-size: 20px;
+	font-size: 50px;
 	color: white;
 }
 
@@ -58,7 +58,7 @@ h4{
 
 #subtitulo{
 	color: #f1d600;
-	font-size: 12px;
+	font-size: 30px;
 }
 
 #subtitulo_detalle{
@@ -74,6 +74,8 @@ h4{
 	margin: 2px ;
 	text-align: center;
 	color: #f1d600;
+	font-weight: bold;
+	font-size: 30px;
 }
 
 
