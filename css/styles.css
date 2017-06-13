@@ -4,7 +4,8 @@ body{
 	font-family: 'Oswald', sans-serif;
 	background: #233d58;
 	margin-bottom: 0px;
-	padding-bottom: 0px;
+	padding: 0px;
+	width: 100%;
 
 }
 
@@ -31,6 +32,10 @@ h1{
 	margin-top: 100px;
 
 }
+
+center{
+	padding: 5px;
+}
 #cabecera{
 	background-image: url("../img/teclado.jpg");
 	position: relative;
@@ -43,6 +48,7 @@ section {
 	/*border: 1px solid black;*/
 	background: white;
 	width: 100%;
+	padding: 0px;
 
 }
 h4{
@@ -66,7 +72,7 @@ h4{
 	margin-left: 5px;
 }
 
-#titulo_resaltado{
+.titulo_resaltado{
 	color: #f1d600;
 	text-align: left;
 }
@@ -82,12 +88,14 @@ h4{
 }
 
 #menu{
-	
 	width: 65%;
-	height: 250px;
+	height: 450px;
 	background: white;
-	z-index: 9999;
-	display: inline;
+	z-index: 999;
+	position: absolute;
+	left: 35%;
+	top: 1%;
+	
 }
 
 .titulosection{
@@ -96,6 +104,7 @@ h4{
 	color: #f1d600;
 	font-weight: bold;
 	font-size: 30px;
+	padding-bottom: 0px;
 }
 
 .proyecto {
@@ -115,18 +124,16 @@ h4{
 	margin-top:5%;
 	width: 300px;
 	height: 150px;
-
+	border: 5px solid black;
 
 }
+
 .servicios{
-	border: 1px solid black;
-	display: inline-block;
+	margin: 1px ;
+	display: inherit;
 	margin-bottom: 5px;
-}
-
-
-.servicios{
-	margin: 1px solid black;
+	border: 1px solid black;
+	
 }
 
 .cara{
@@ -192,6 +199,13 @@ h4{
 		width: 500px; 
 		height: 200px;
 	}
+	#menu{
+		display: inline-block;
+		background: none;	
+		font-size: 17px;
+		margin-right: 8px;
+	
+	}
 
 }
 
@@ -207,7 +221,7 @@ h4{
 		display: none;
 	}
 
-
+	
 
 	.cara{
 		border-radius: 5%;
@@ -217,6 +231,12 @@ h4{
 		margin-bottom: 5px;
 		margin-left: 5px;
 		
+	}
+	#menu{
+		background: none;	
+		font-size: 20px;
+		margin-right: 8px;
+	
 	}
 
 }
