@@ -25,7 +25,12 @@ header{
 	padding-bottom: 0px;
 }
 li{
+	
 	display: inline-block;
+	font-size: 40px;
+	margin-top: 10px;
+	
+
 }
 
 h1{
@@ -60,7 +65,7 @@ h4{
 
 #linkmenu{
 	cursor: pointer;
-	font-size: 15px;
+	font-size: 25px;
 	color: white;
 	margin-top: 1%;
 
@@ -76,6 +81,11 @@ h4{
 	color: #f1d600;
 	text-align: left;
 }
+.titulo_resaltado2{
+	color: #f1d620;
+	font-size: 60px;
+	
+}
 
 .subtitulo{
 	color: #f1d600;
@@ -89,12 +99,13 @@ h4{
 
 #menu{
 	width: 65%;
-	height: 450px;
+	height: 550px;
 	background: white;
 	z-index: 999;
 	position: absolute;
 	left: 35%;
 	top: 1%;
+	/*display: none;*/
 	
 }
 
