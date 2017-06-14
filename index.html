@@ -28,10 +28,8 @@
 			else{
 				menu.style.display="none";
 			}
-
 		
 		}
-
 	</script>
 	<body>
 		<header>
@@ -40,13 +38,13 @@
 					<div >	
 						<ul >
 							<br>
-							<li ><a class="titulo_resaltado2"  onClick= "mostrarMenu()" href="#"> <-ATRAS </li><br>
-							<li><a href="index.html"> Inicio </li><br>
-							<li><a href="#"> Sobre mi </li><br>
-							<li><a href="#"> Servicios </li><br>
-							<li><a href="#"> Portfolio</li><br>
-							<li><a href="#"> Contacto </li><br>
-
+							<li><a onClick= "mostrarMenu()" href="index.html"> Inicio </li><br>
+							<li><a onClick= "mostrarMenu()" href="#serv"> Servicios </li><br>
+							<li><a onClick= "mostrarMenu()" href="#portfolio"> Portfolio</li><br>
+							<li><a onClick= "mostrarMenu()" href="#sobremi"> Sobre mi </li><br>
+							<li><a onClick= "mostrarMenu()" href="#contacto"> Contacto </li><br><br>
+							<li ><a class="titulo_resaltado2"  onClick= "mostrarMenu()" href="#"> <-ATRAS </li>
+							<br>
 						</ul>
 					</div>
 				</nav>
@@ -69,8 +67,8 @@
 			</h1>
 			
 		</div>
-		<section class="titulosection">
-			<p> Servicios </p>
+		<section >
+			<p id="serv"class="titulosection"> Servicios </p>
 				<center>
 					<div class="servicios"> 
 						<p> Servicio técnico </p>
@@ -82,12 +80,10 @@
 
 					</div>
 				</center>
-
-
 		</section>
 		
 		<section >
-			<p class="titulosection">Portfolio</p>
+			<p id="portfolio" class="titulosection">Portfolio</p>
 			<center>
 			<div class="proyecto"> Proyecto N
 				<img src="img/portatil.jpg" class="proyectointerior">
@@ -117,7 +113,7 @@
 			</center>
 		</section>
 		<section >
-			<p class="titulosection">Sobre mi</p>
+			<p id="sobremi" class="titulosection">Sobre mi</p>
 			<center> 
 				<img src="img/cara.png" class="cara">
 			</center>
@@ -125,7 +121,7 @@
 
 		</section>
 		<section >
-			<p class="titulosection">Contacto</p>
+			<p id="contacto" class="titulosection">Contacto</p>
 			<form class="texto">
 				Nombre:<br>
 				<input   type="text" name="Nombre" placeholder="Tu nombre o empresa"><br>
@@ -141,8 +137,7 @@
 
 		</section>
 		<div>
-			<img src="icon/">
-
+		
 
 
 		</div>
