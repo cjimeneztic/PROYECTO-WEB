@@ -15,14 +15,32 @@
 		
 		
 	</head>
+	<script >
+		function mostrarMenu(){
+			var menu;
+			var mostrar;
+			menu=document.getElementById("menu");
+			mostrar=menu.style.display;
+			
+			if(mostrar=="none"){
+				menu.style.display="block";
+			}
+			else{
+				menu.style.display="none";
+			}
+
+		
+		}
+
+	</script>
 	<body>
 		<header>
 
-				<nav id="menu">
+				<nav id="menu" >
 					<div >	
 						<ul >
 							<br>
-							<li ><a class="titulo_resaltado2" href="#"> MENU </li><br>
+							<li ><a class="titulo_resaltado2"  onClick= "mostrarMenu()" href="#"> <-ATRAS </li><br>
 							<li><a href="index.html"> Inicio </li><br>
 							<li><a href="#"> Sobre mi </li><br>
 							<li><a href="#"> Servicios </li><br>
@@ -34,7 +52,7 @@
 				</nav>
 				<br><br>
 				
-				<a id= "linkmenu" href="index.html">linkmenu</a></h2>
+				<a id= "linkmenu" onClick= "mostrarMenu()" >MENU</a></h2>
 
 		</header>
 		
