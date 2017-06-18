@@ -20,9 +20,9 @@ header{
 	margin-bottom: 0px;
 	padding-bottom: 0px;
 }
-li{
+li, ul , nav{
 	
-	display: inline-block;
+	display: inherit;
 	font-size: 40px;
 	margin-top: 10px;
 	
@@ -102,7 +102,6 @@ footer{
 	font-size: 25px;
 	color: white;
 	margin-top: 1%;
-
 	position: absolute;
 	top: 2%;
 }
@@ -119,7 +118,8 @@ footer{
 }
 .titulo_resaltado2{
 	color: #f1d620;
-	font-size: 60px;
+	font-size: 50px;
+	margin-right: 5px;
 	
 }
 
@@ -134,8 +134,10 @@ footer{
 }
 
 #menu{
-	width: 65%;
-	height: 550px;
+	width: 50%;
+	height: 50%;
+	min-width: 20%;
+	min-height: 35%;
 	background: white;
 	z-index: 999;
 	position: absolute;
@@ -143,8 +145,7 @@ footer{
 	top: 1%;
 	border-right: 10px solid green;
 	position: fixed;
-	display: none;
-	
+	display: none;	
 }
 .in{
 	-moz-animation: 0.5s reboteIn 1; /*Firefox*/ 
@@ -265,14 +266,28 @@ footer{
 	body{
 		background : rgb(20%, 30%, 50%);
 	}
-	li{
+	nav, li, ul, a{
 		display: inline-block;
-	}
-	#linkmenu{
-		display: none;
-
+		color: white;
+		margin: 5px;
 	}
 	
+	#menu{
+		width: 90%;
+		min-width: 100%;
+		background: none;
+		z-index: 999;
+		position: relative;
+		left: 20%;
+		top: 1%;
+		border-right: 10px solid white;
+		position: fixed;
+
+		
+}
+	.titulo_resaltado2{
+		display: none;
+	}
 	.cara{
 		border-radius: 5%;
 		padding: 0px;
@@ -287,13 +302,7 @@ footer{
 		width: 500px; 
 		height: 200px;
 	}
-	#menu{
-		display: inline-block;
-		background: none;	
-		font-size: 17px;
-		margin-right: 8px;
 	
-	}
 
 }
 
@@ -305,12 +314,7 @@ footer{
 	li{
 		display: inline-block;
 	}
-	#linkmenu{
-		display: none;
-	}
-
 	
-
 	.cara{
 		border-radius: 5%;
 		padding: 0px;
