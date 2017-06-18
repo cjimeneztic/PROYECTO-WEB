@@ -201,7 +201,7 @@ footer{
 .proyecto {
 	display: inline-block;
 	width: 330px;
-	height: 350px;
+	height: 450px;
 	margin: 5px;
 	text-align: center;
 	margin-left: 5px;
@@ -209,12 +209,15 @@ footer{
 	padding: 0px;
 	background-color: #E5E5F4;
 	font-size: 19px;
+	padding: 8px;
 
 }
 .proyecto:hover{
-	box-shadow: 0px 0px 9px #f1d600 ;
+	box-shadow: 0px 0px 9px #233d58 ;
 }
+
 .proyectoInterior{
+	position:relative;
 	margin-top:5%;
 	width: 300px;
 	height: 150px;
@@ -241,7 +244,7 @@ footer{
 .texto{
 	color: black;
 	text-align: justify;
-	font-size: 15px;
+	font-size: 1em;
 	margin-left: 5px;
 	margin-right: 5px;
 
@@ -271,7 +274,7 @@ input, textarea{
 	color: #233d58;
 	border-radius: 15%;
 	font-size: 15px;
-
+	box-shadow: 0px 0px 9px #233d58 ;
 }
 .contactoRapido{
 	background-color: red;
@@ -284,10 +287,12 @@ input, textarea{
 	left: 80%;
 	right: 10%;
 	z-index: 9999;
-
+	box-shadow: 0px 0px 9px #233d58 ;
 }
 
+.contactoRapido:hover{
 
+}
 
 
 
