@@ -46,6 +46,37 @@ section {
 	padding: 0px;
 
 }
+.inY{
+	-moz-animation: 1s inY 1; /*Firefox*/ 
+	-webkit-animation: 1s inY 1; /*chrome, safari, android,iOS*/ 
+	-o-animation: 1s inY 1; /*Opera*/ 
+	-ms-animation: 1 inY 1; /*Explorer*/ 
+}
+
+@-moz-keyframes inY{
+	0%{
+		opacity: 0;
+		-moz-transform: translateY(100px);/*Firefox*/
+		-webkit-transform: translateY(100px);/*chrome, safari, android,iOS*/ 
+		-o-transform: translateY(100px);/*Opera*/ 
+		-ms-transform: translateY(100px);/*Explorer*/ 
+	}
+	50%{
+		opacity: 0.7;
+		-moz-transform: translateY(0px);/*Firefox*/
+		-webkit-transform: translateY(0px);/*chrome, safari, android,iOS*/ 
+		-o-transform: translateY(0px);/*Opera*/
+		-ms-transform: translateY(0px);/*Explorer*/
+	}
+	90%{
+		opacity: 1;
+		-moz-transform: translateY(0px);/*Firefox*/
+		-webkit-transform: translateY(0px);/*chrome, safari, android,iOS*/ 
+		-o-transform: translateY(0px);/*Opera*/
+		-ms-transform: translateY(0px);/*Explorer*/
+	}
+
+}
 h4{
 	font-size: 15px;
 	margin-top: 20px;
@@ -115,7 +146,7 @@ footer{
 	display: none;
 	
 }
-.reboteMenu{
+.in{
 	-moz-animation: 0.5s reboteIn 1; /*Firefox*/ 
 	-webkit-animation: 1s reboteIn 1; /*chrome, safari, android,iOS*/ 
 	-o-animation: 1s reboteIn 1; /*Opera*/ 
@@ -136,6 +167,24 @@ footer{
 		-webkit-transform: translateX(0px);/*chrome, safari, android,iOS*/ 
 		-o-transform: translateX(0px);/*Opera*/
 		-ms-transform: translateX(0px);/*Explorer*/
+	}
+
+}
+.out{
+	-moz-animation: 1s reboteOut 1; /*Firefox*/ 
+	-webkit-animation: 1s reboteOut 1; /*chrome, safari, android,iOS*/ 
+	-o-animation: 1s reboteOut 1; /*Opera*/ 
+	-ms-animation: 1s reboteOut 1; /*Explorer*/ 
+}
+
+@-moz-keyframes reboteOut{
+	
+	70%{
+		opacity: 0;
+		-moz-transform: translateX(-1000px);/*Firefox*/
+		-webkit-transform: translateX(-1000px);/*chrome, safari, android,iOS*/ 
+		-o-transform: translateX(-1000px);/*Opera*/
+		-ms-transform: translateX(-1000px);/*Explorer*/
 	}
 
 }
