@@ -337,7 +337,7 @@ footer{
 /*medidas para pc de sobremesa*/
 @media screen and (min-width: 1000px){
 	body{
-		background : orange;
+		background : #233d58;
 	}
 	li{
 		display: inline-block;
