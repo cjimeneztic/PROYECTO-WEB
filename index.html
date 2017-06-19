@@ -15,7 +15,33 @@
 		
 		
 	</head>
-	<script >
+	<script type="text/javascript">
+		alertSize();
+		function alertSize() { 
+		  	var myWidth = 0, myHeight = 0; var menu;
+			var mostrar;
+		  if( typeof( window.innerWidth ) == 'number' ) { 
+		    //No-IE 
+		    myWidth = window.innerWidth; 
+		    myHeight = window.innerHeight; 
+		  } else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
+		    //IE 6+ 
+		    myWidth = document.documentElement.clientWidth; 
+		    myHeight = document.documentElement.clientHeight; 
+		  } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+		    //IE 4 compatible 
+		    myWidth = document.body.clientWidth; 
+		    myHeight = document.body.clientHeight; 
+		  }
+		  menu=document.getElementById("menu");
+		  
+		  if(myWidth<480){
+		  		menu.style.display= "none";
+		  }
+		  else{
+		  		menu.style.display= "block";
+		  }
+		}
 		function mostrarMenu(){
 			var menu;
 			var mostrar;
@@ -37,13 +63,12 @@
 				<nav  id="menu" class="in">
 					<div >	
 						<ul >
-							
+							<li ><a class="titulo_resaltado"  onClick= "mostrarMenu()" class="out" href="#"> <<< </li>
 							<li><a onClick= "mostrarMenu()" href="index.html"> Inicio </li>
 							<li><a onClick= "mostrarMenu()" href="#serv"> Servicios </li>
 							<li><a onClick= "mostrarMenu()" href="#portfolio"> Portfolio</li>
 							<li><a onClick= "mostrarMenu()" href="#sobremi"> Sobre mi </li>
 							<li><a onClick= "mostrarMenu()" href="#contacto"> Contacto </li>
-							<li ><a class="titulo_resaltado2"  onClick= "mostrarMenu()" class= "out" href="#"> <-ATRAS </li>
 							
 						</ul>
 					</div>

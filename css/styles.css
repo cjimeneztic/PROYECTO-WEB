@@ -117,6 +117,7 @@ footer{
 .titulo_resaltado{
 	color: #f1d600;
 	text-align: left;
+
 }
 
 .titulo_resaltado2{
@@ -146,16 +147,16 @@ footer{
 	position: absolute;
 	left: 0%;
 	top: 1%;
-	border-right: 10px solid green;
+	box-shadow: 0px 0px 9px #233d58;
 	position: fixed;
 	display: none;	
 }
 
 .in{
-	-moz-animation: 1s reboteIn 1; /*Firefox*/ 
-	-webkit-animation: 1s reboteIn 1; /*chrome, safari, android,iOS*/ 
-	-o-animation: 1s reboteIn 1; /*Opera*/ 
-	-ms-animation: 1s reboteIn 1; /*Explorer*/ 
+	-moz-animation: 0.5s reboteIn 1; /*Firefox*/ 
+	-webkit-animation: 0.5s reboteIn 1; /*chrome, safari, android,iOS*/ 
+	-o-animation: 0.5s reboteIn 1; /*Opera*/ 
+	-ms-animation: 0.5s reboteIn 1; /*Explorer*/ 
 }
 
 @-moz-keyframes reboteIn{
@@ -186,7 +187,7 @@ footer{
 @-moz-keyframes reboteOut{
 	
 	70%{
-		opacity: 0;
+		opacity: 0.5;
 		-moz-transform: translateX(-1000px);/*Firefox*/
 		-webkit-transform: translateX(-1000px);/*chrome, safari, android,iOS*/ 
 		-o-transform: translateX(-1000px);/*Opera*/
@@ -309,7 +310,6 @@ input, textarea{
 
 
 
-
 /*----POR DEFECTO, EN RESPONSIVE DESIGN ES MOBILE FIRST----*/
 
 
@@ -318,7 +318,7 @@ input, textarea{
 	
 	body{
 		/*background : rgb(20%, 30%, 50%);*/
-		background: #233d58;
+		background: #000d58;
 	}
 
 	nav, li, ul, a{
