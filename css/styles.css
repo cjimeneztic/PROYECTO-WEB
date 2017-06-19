@@ -152,6 +152,7 @@ footer{
 	display: none;	
 }
 
+
 .in{
 	-moz-animation: 0.5s reboteIn 1; /*Firefox*/ 
 	-webkit-animation: 0.5s reboteIn 1; /*chrome, safari, android,iOS*/ 
@@ -353,7 +354,11 @@ input, textarea{
 		background: none;	
 		font-size: 17px;
 		margin-right: 8px;
-		background: #233d58
+		background: #233d58;
+		display: block;
+	}
+	#atras{
+		display: none;
 	}
 
 	.titulo_resaltado2{
