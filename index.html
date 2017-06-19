@@ -16,10 +16,7 @@
 		
 	</head>
 	<script type="text/javascript">
-		
-
-
-		alertSize();
+	
 		function alertSize() { 
 		  var myWidth = 0, myHeight = 0; 
 		  if( typeof( window.innerWidth ) == 'number' ) { 
@@ -29,21 +26,15 @@
 		  } 
 
 		  	var menu;
-			var mostrar;
 			menu=document.getElementById("menu");
-			mostrar=menu.style.display;
-			
-		  	if(myWidth){
-		  		menu.style.display="none";
+
+		  	if( myWidth < 480){
+		  		menu.style.display= "none";
 		  	}else{
-		  		menu.style.display="block";
+		  		menu.style.display= "block";
 		  	}
-
-
-
-
 		}
-	
+
 		function mostrarMenu(){
 			var menu;
 			var mostrar;
@@ -58,8 +49,9 @@
 			}
 		
 		}
+
 	</script>
-	<body>
+	<body onload="alertSize()")>
 		<header>
 
 				<nav  id="menu" class="in" >
