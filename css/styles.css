@@ -319,9 +319,18 @@ input, textarea{
 	
 	body{
 		/*background : rgb(20%, 30%, 50%);*/
-		background: #000d58;
+		background: #233d58;
+		padding: 0px;
+		margin: 0px;
 	}
-
+	header{
+		padding: 0px;
+		margin: 0px;
+	}
+	#cabecera{
+		position: relative;
+		margin-top: 2em;
+	}
 	nav, li, ul, a{
 		position: relative;
 		display: inline-block;
@@ -331,8 +340,8 @@ input, textarea{
 		height: 1.4em;
 		font-size: 1.1em;
 		text-align: right;
-		margin-left: 5px;
-		background: #233d58
+		margin-left: 0px;
+		background: #233d58;
 	}
 
 	#linkmenu{
@@ -345,9 +354,7 @@ input, textarea{
 		min-width: 20%;
 		min-height: 5%;
 		height: 20px;
-		
-		z-index: 999;
-		top: 1%;
+		top: 0%;
 		border-right: none;
 		position: fixed;
 		display: inline-block;
