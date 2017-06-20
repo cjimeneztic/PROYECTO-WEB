@@ -45,16 +45,16 @@ section {
 
 }
 #serv{
-	padding-top: 50px;
+	padding-top: 55px;
 }
 #portfolio{
-	padding-top: 50px;
+	padding-top: 55px;
 }
 #sobremi{
-	padding-top: 50px;
+	padding-top: 55px;
 }
 #contacto{
-	padding-top: 50px;
+	padding-top: 55px;
 }
 
 .inY{
@@ -379,12 +379,12 @@ input, textarea{
 		position: relative;
 		display: inline-block;
 		color: white;
-		
+		margin-left: 0px;
+		padding-left: 0px;
 		margin-top: 0px;
 		height: 1.4em;
 		font-size: 1.2em;
 		text-align: right;
-		margin-left: 5px;
 		margin-bottom: 0px;
 		padding-bottom: 0px;
 		background: #233d58;
@@ -405,9 +405,9 @@ input, textarea{
 		height: 20px;
 		top: 0%;
 		border-right: none;
+		border-left: none;
 		position: fixed;
 		display: inline-block;
-		background: none;	
 		font-size: 17px;
 		margin-right: 8px;
 		background: #233d58;
