@@ -18,20 +18,16 @@
 	<script type="text/javascript">
 	
 		function alertSize() { 
-		  var myWidth = 0, myHeight = 0; 
+		  var myWidth = 0, myHeight = 0; 	var menu;
 		  if( typeof( window.innerWidth ) == 'number' ) { 
 		    //No-IE 
 		    myWidth = window.innerWidth; 
 		    myHeight = window.innerHeight; 
 		  } 
-
-		  	var menu;
 			menu=document.getElementById("menu");
 
 		  	if( myWidth < 480){
 		  		menu.style.display= "none";
-		  	}else{
-		  		menu.style.display= "block";
 		  	}
 		}
 
