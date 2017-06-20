@@ -22,27 +22,43 @@
 		  if( typeof( window.innerWidth ) == 'number' ) { 
 		    //No-IE 
 		    myWidth = window.innerWidth; 
-		    myHeight = window.innerHeight; 
 		  } 
 			menu=document.getElementById("menu");
 
-		  	if( myWidth < 480){
+		  	if( myWidth < 600){
 		  		menu.style.display= "none";
+		  	}else{
+		  		menu.style.display= "block";
 		  	}
 		}
 
 		function mostrarMenu(){
 			var menu;
 			var mostrar;
+			var myWidth=0;
 			menu=document.getElementById("menu");
 			mostrar=menu.style.display;
 			
-			if(mostrar=="none"){
-				menu.style.display="block";
+			if( typeof( window.innerWidth ) == 'number' ) { 
+		    	myWidth = window.innerWidth; 
+		    }
+			menu=document.getElementById("menu");
+
+		  	if( myWidth < 600){
+			
+				if(mostrar== "none")
+				{
+					menu.style.display= "block";
+				}
+				else
+				{
+					menu.style.display= "none";
+				}
 			}
-			else{
-				menu.style.display="none";
+			else {
+				menu.style.display= "block";
 			}
+			
 		
 		}
 
@@ -54,17 +70,20 @@
 					<div >	
 						<ul >
 							<li ><a class="titulo_resaltado" id="atras" onClick= "mostrarMenu()" class="out" href="#"> <<< </li>
-							<li><a onClick= "mostrarMenu()" href="index.html"> Inicio </li>
-							<li><a onClick= "mostrarMenu()" href="#serv"> Servicios </li>
-							<li><a onClick= "mostrarMenu()" href="#portfolio"> Portfolio</li>
-							<li><a onClick= "mostrarMenu()" href="#sobremi"> Sobre mi </li>
-							<li><a onClick= "mostrarMenu()" href="#contacto"> Contacto </li>
+							<li><a class="textoMenu" onClick= "mostrarMenu()" href="index.html"> Inicio </li>
+							<li><a class="textoMenu" onClick= "mostrarMenu()" href="#serv"> Servicios </li>
+							<li><a class="textoMenu" onClick= "mostrarMenu()" href="#portfolio"> Portfolio</li>
+							<li><a  class="textoMenu" onClick= "mostrarMenu()" href="#sobremi"> Sobre mi </li>
+							<li><a  class="textoMenu" onClick= "mostrarMenu()" href="#contacto"> Contacto </li>
 							
 						</ul>
 					</div>
 				</nav>
+				<div id="backgroundMenu">
+					<a id= "linkmenu" onClick= "mostrarMenu()" > MENU </a>
+				</div>
 				
-				<a id= "linkmenu" onClick= "mostrarMenu()" > MENU </a></h2>
+			</h2>
 
 		</header>
 		
