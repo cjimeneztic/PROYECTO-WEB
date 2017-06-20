@@ -44,6 +44,18 @@ section {
 	padding: 0px;
 
 }
+#serv{
+	padding-top: 50px;
+}
+#portfolio{
+	padding-top: 50px;
+}
+#sobremi{
+	padding-top: 50px;
+}
+#contacto{
+	padding-top: 50px;
+}
 
 .inY{
 	-moz-animation: 1s inY 1; /*Firefox*/ 
@@ -225,7 +237,7 @@ footer{
 	text-align: center;
 	color: #f1d600;
 	font-weight: bold;
-	font-size: 30px;
+	font-size: 40px;
 	padding-bottom: 0px;
 }
 
@@ -362,6 +374,7 @@ input, textarea{
 	.textoMenu{
 		color: white;
 	}
+	
 	nav, li, ul, a{
 		position: relative;
 		display: inline-block;
