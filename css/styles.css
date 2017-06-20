@@ -84,11 +84,16 @@ h4{
 
 }
 
+
 footer{
 	font-family: 'Oswald', sans-serif;
 	margin-bottom: 0px;
 	padding-bottom: 0px;
+	height: 500px;
+	background-color: black;
+	
 }
+
 
 #cabecera{
 	background-image: url("../img/teclado.jpg");
@@ -280,7 +285,8 @@ footer{
 .texto2{
 	color: white;
 	text-align: justify;
-	font-size: 1.3em;
+	margin: red;
+	font-size: 1.6em;
 	margin-left: 5px;
 	margin-right: 5px;
 
