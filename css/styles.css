@@ -122,12 +122,13 @@ footer{
 #cabecera{
 	margin-top: 0px;
 	padding-top: 0px;
-	background-image: url("../img/teclado.jpg");
+	background-image: url("../img/teclado2.jpg");
 	position: relative;
 	width: 100%;
-	height: 1000px;
+	height: 930px;
 	top: 1px;
-	
+
+
 
 }
 #backgroundMenu{
@@ -144,20 +145,18 @@ footer{
 	font-size: 45px;
 	color: white;
 	position: relative;
-	
 	top: 0px;
-	
 
 }
 
 #titulo{
 	position: relative;
 	font-size: 100px;
-	color: #f1d600;
+	color: #e6b800;
 	margin-top: 80px;
 	margin-left: 5px;
 	text-align: center;
-
+	/*box-shadow: 0px 0px 9px red;*/
 }
 
 .titulo_resaltado{
@@ -326,6 +325,14 @@ footer{
 	margin-right: 5px;
 
 }
+.texto3{
+	color: black;
+	text-align: justify;
+	font-size: 1.4em;
+	margin-left: 15px;
+	margin-right: 15px;
+	
+}
 
 input, textarea{
 	border: none;
@@ -397,7 +404,7 @@ input, textarea{
 	#titulo{
 		position: relative;
 		font-size: 140px;
-		color: #f1d600;
+		color: #e6b800;
 		margin-top: 100px;
 		margin-left: 5px;
 		text-align: center;
