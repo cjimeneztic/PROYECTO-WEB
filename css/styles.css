@@ -390,32 +390,26 @@ input, textarea{
 	box-shadow: 0px 0px 9px #233d58 ;
 }
 
-.contactoRapido{
-	background-color: red;
-	position: fixed;
-	width: 60px;
-	height: 60px;
-	border-radius: 50%;
-	padding: 0px;
-	margin: 0px;
-	top: 80%;
-	left: 80%;
-	right: 10%;
-	z-index: 9999;
-	box-shadow: 0px 0px 9px #233d58 ;
-}
+
 
 .icon-compass:before {
   	content: "\e949";
   	position: relative;
+  	border-radius: 50%;
+	top: 80%;
+	left: 80%;
   	color: white;
-  	top: 10%;
-	left: 20%;
-	bottom: 20%;
-	right: 20%;
-	
+  	font-size: 4.3em;
+  	padding-top: 22px;
+  	padding-left: 13px;
+  	margin-right: 10px;
+  	z-index: 9999;
+  	background-color: red;
+	position: fixed;
+	width: 100px;
+	height: 100px;
+	box-shadow: 0px 0px 9px #233d58 ;
 }
-
 
 
 
