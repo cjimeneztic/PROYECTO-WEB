@@ -227,7 +227,7 @@ footer{
 #menu{
 	width: 50%;
 	height: 50%;
-	min-width: 20%;
+	min-width: 40%;
 	min-height: 35%;
 	background: #eff5f5;
 	z-index: 9999;
@@ -413,8 +413,9 @@ input, textarea{
 /*icono flecha*/
 .icon-arrow-left:before{
 	content: "\ea38";
+	padding-top: 15px;
 	font-size: 50px;
-	color: red;
+	color: #eff5f5;
 }
 
 /*icono gear*/
