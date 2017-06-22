@@ -391,7 +391,7 @@ input, textarea{
 }
 
 
-
+/*icono avión de papel */
 .icon-compass:before {
   	content: "\e949";
   	position: relative;
@@ -410,6 +410,38 @@ input, textarea{
 	height: 100px;
 	box-shadow: 0px 0px 9px #233d58 ;
 }
+/*icono flecha*/
+.icon-arrow-left:before{
+	content: "\ea38";
+	font-size: 50px;
+	color: red;
+}
+
+/*icono gear*/
+.icon-cog:before {
+  content: "\e994";
+}
+/*icono dos gears*/
+.icon-cogs:before {
+  content: "\e995";
+}
+
+/*icono bola del mundo*/
+.icon-earth:before {
+  content: "\e9ca";
+}
+
+/*icono llave inglesa*/
+.icon-wrench:before {
+  content: "\e991";
+}
+
+
+
+
+
+
+
 
 
 
@@ -469,6 +501,9 @@ input, textarea{
 		margin-right: 5px;
 		
 	}
+	.icon-arrow-left:before{
+	display: none;
+}
 
 	#linkmenu{
 		display: none;
@@ -525,21 +560,9 @@ input, textarea{
 		font-size: 40px;
 }	
 	.icon-compass {
-  	content: "\e949";
-  	position: relative;
-  	border-radius: 50%;
-	top: 80%;
-	left: 80%;
-  	color: white;
   	font-size: 1em;
   	padding-top: 22px;
-  	text-align: left;
-  	z-index: 9999;
-  	background-color: red;
-	position: fixed;
-	width: 100px;
-	height: 100px;
-	box-shadow: 0px 0px 9px #233d58 ;
+  	text-align: left;	
 }
 	
 
