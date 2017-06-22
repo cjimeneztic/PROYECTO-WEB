@@ -415,13 +415,15 @@ input, textarea{
 	content: "\ea38";
 	padding-top: 15px;
 	font-size: 50px;
-	color: #eff5f5;
+	color: #3b5e5e;
+
 }
 
 /*icono gear*/
 .icon-cog:before {
   content: "\e994";
 }
+
 /*icono dos gears*/
 .icon-cogs:before {
   content: "\e995";
@@ -435,6 +437,11 @@ input, textarea{
 /*icono llave inglesa*/
 .icon-wrench:before {
   content: "\e991";
+}
+
+/*icono whatsapp*/
+.icon-whatsapp:before {
+  content: "\ea93";
 }
 
 
