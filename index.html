@@ -7,9 +7,10 @@
 		<meta name="author" content="Cristian Jiménez">
 		<link rel="stylesheet" href="css/styles.css">
 		<link rel="stylesheet" href="css/normalize.css">
+		<script type="text/javascript" src="javascript/modernizr-custom.js"></script>
 		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">	
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>	
-		<script type="text/javascript" src="javascript/modernizr-custom.js"></script>
+		
 		
 			
 	</head>
@@ -56,8 +57,6 @@
 			else {
 				menu.style.display= "block";
 			}
-			
-		
 		}
 
 	</script>
@@ -90,8 +89,7 @@
 		</header>
 		
 		<div id="cabecera" class="inY">
-			<h2 >
-					 
+			<h2 >	 
 					<p id="titulo"> Bienvenido
 					</p>
 					<span class="titulo_resaltado"> Cristian Jiménez
@@ -149,7 +147,7 @@
 				<p  class="texto">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
 				<button class="boton" href="http://www.barcalatony.es/"> ver </button>
 			</div>
-			<div class="proyecto"> Libro "Asedios Ciberneticos"
+			<div class="proyecto"> Libro "Seguridad en redes y sistemas"
 				<img src="img/itsecurity.jpg" class="proyectoInterior">
 				<p class="texto">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 				<button class="boton"> Descarga pdf </button>
@@ -163,22 +161,39 @@
 			</center>
 		</section class="inY">
 		<section class="inY" >
+			
 			<p id="sobremi" class="titulosection">Sobre mi</p>
-			<center> 
-				<img src="img/cara.png" class="cara">
-			</center>
-			<p class="texto4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. 
+	
+		
+				<div class="skills">
+					<p class="subtitulo2">Mi exp</p>
+					<p>asdasdasdLorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.a</p>
+				</div>
 
-			Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,.......</p>
+				<div class="skills">
+					<p class="subtitulo2">Skills</p>
+					<p>
+					&bull; GNU/Linux, Windows XP/7/Vista/8/10, Android, MACOSX, iOS.<br>
+					&bull; Administración y gestión de routers Cisco, Wi-fi, switching, LAN/WAN, Firewalls.<br>
+					&bull; Oracle SQL, PostgreSQL.<br>
+					&bull; Conocimientos en lenguajes de programación y desarrollo web como C, Java, Python, SQL, HTML5/CSS3, Javascript <br>
+					&bull; Prestashop, Wordpress, Eclipse, NetBeans.<br>
+					&bull; Microsoft Office, LibreOffice.<br>
+					&bull; Tareas técnicas generales de mantenimento de CPU, HDD, Motherboards, GPU, etc.<br><br>
+					Además...<br>SEO, LAMP, GitHub,  VMware, VirtualBOX, Photoshop, Google Apps.<br>
+					</p>
 
+
+				</div>
+			
 		</section >
 		<section class="inY">
 			<p  id="contacto" class="titulosection">Contacto</p>
 			<form method= "post" >
 			
-					<p class="texto3" >Por favor, no dude en contactar conmigo mediante el siguiente formulario. Le contestaré en la mayor brevedad posible.<br> Si prefiere enviarme un email mediante su gestior habitual puede hacerlo en cjimeneztic@gmail.com
+					<p class="texto3" >Por favor, no dude en contactar conmigo mediante el siguiente formulario. Le contestaré en la mayor brevedad posible.<br> Si prefiere enviarme un email mediante su gestior habitual puede hacerlo en <strong>cjimeneztic@gmail.com</strong>
 					</p>
-					<br><br>
+					<br>
 					<div id="error"></div>
 					<p class="texto3">Nombre:</p>
 					<input   type="text" name="nombre" id="nombre" placeholder="Tu nombre o empresa"/><br><br>
@@ -186,7 +201,7 @@
 					<input   type="text" name="asunto" id="asunto" placeholder="Tema del mensaje"><br>
 					<br>
 					<p class="texto3">Email: </p>
-					<input   type="text" name="email" id="email" placeholder="Un email de contacto"><br><br>
+					<input   type="email" name="email" id="email" placeholder="Un email de contacto" ><br><br>
 					<textarea type="text" name="cuerpo" id="cuerpo" class="cuerpo" placeholder="Cuerpo del mensaje" ></textarea><br>
 					<br><br>
 					<input type="submit" value"Enviar" class="boton" ;>
@@ -195,13 +210,10 @@
 			</form>
 		</section>
 
-		<!--Control de campos obligatorios de formulario-->
+		<!--Control de los campos obligatorios de formulario-->
 		 <script type="text/javascript">
-          
-	       $("form").submit(function(e){
-				
+	       $("form").submit(function(e){		
 				var error="";
-
 				if ( $("#nombre").val()==""){
 					error += "El campo nombre es obligatorio.<br>";
 				}
@@ -215,74 +227,21 @@
 				if ( $("#cuerpo").val()==""){
 					error += "El campo cuerpo es obligatorio.<br>";
 				}
-
-
 				if(error != ""){
 					$("#error").html('<div id="informe"><strong>Ha ocurrido algun problema:</strong><br>'+error+'</div>');
 						return false;
 				}
-				else{
-					
-					
+				else{	
 						return true;
 				}
 
-			})
-          
+			}) 
    		 </script>
 
 			<div>
 				<a  href="#contacto" class="icon-envelop"></a>
 			</div>
 	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          
-          
-   
-
-			
-		      
-		     
-      
-
-
-
-
 
 
 

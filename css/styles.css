@@ -61,6 +61,7 @@ li, ul , nav{
 	display: inherit;
 	font-size: 40px;
 	margin-top: 10px;
+
 }
 
 figure{
@@ -162,7 +163,7 @@ footer{
 	position: relative;
 	width: 100%;
 	height: 930px;
-	top: 10px;
+	top: 9px;
 	overflow: hidden;
 
 
@@ -232,6 +233,11 @@ footer{
 .textoMenu{
 	color: #3b5e5e;
 	top: 10px;
+	text-decoration: none;
+}
+.textoMenu:hover{
+	color: #e6b800;
+
 }
 
 #menu{
@@ -370,19 +376,17 @@ footer{
 	margin-right: 5px;
 
 }
+
 .texto3{
 	color: black;
 	text-align: justify;
 	font-size: 1.4em;
 	margin-left: 15px;
 	margin-right: 15px;
-	
 }
+
 .texto4{
-	padding: 40px;
-	color: black;
-	text-align: justify;
-	font-size: 1.4em;
+	
 	margin-left: 15px;
 	margin-right: 15px;
 	
@@ -405,7 +409,7 @@ input, textarea{
 }
 
 form{
-	padding: 40px;
+	padding-left: 40px;
 }
 
 #informe{
@@ -431,13 +435,44 @@ form{
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+.subtitulo2{
+	font-size: 2em;
+	color: #e6b800;
+	margin-left: 20px;
+
+}
+
+.skills{
+	color: black;
+	display: inline-block;
+	text-align: justify;
+	margin: red;
+	font-size: 1.4em;
+	margin-left: 5px;
+	margin-right: 5px;
+	padding: 25px;
+}
+	
+
 /*icono sobre */
 .icon-envelop:before {
   	content: "\e945";
   	position: relative;
   	border-radius: 50%;
-	top: 80%;
-	left: 80%;
+	top: 70%;
+	left: 70%;
   	color: white;
   	font-size: 4.3em;
   	padding-top: 20px;
@@ -456,6 +491,7 @@ form{
 	padding-top: 15px;
 	font-size: 50px;
 	color: #3b5e5e;
+	text-decoration: none;
 
 }
 
@@ -613,7 +649,7 @@ form{
 		position: relative;
 		display: inline-block;
 		width: 600px;
-		height: 1050px;
+		height: 750px;
 
 		text-align: center;
 		padding: 40px;
