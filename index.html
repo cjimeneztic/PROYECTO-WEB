@@ -5,13 +5,12 @@
 		<title>Cristian Jiménez Ingeniero Técnico en Informático </title>
 		<meta name="owner" content="Cristian Jiménez">
 		<meta name="author" content="Cristian Jiménez">
-		<link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/styles.css">
 		<link rel="stylesheet" href="css/normalize.css">
-		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">		
-		<script type="text/javascript" src="bootstrap/dist/js/bootstrap.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>	
 		<script type="text/javascript" src="javascript/modernizr-custom.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		
 			
 	</head>
 	<script type="text/javascript">
@@ -60,6 +59,12 @@
 			
 		
 		}
+
+	</script>
+
+	<script type="text/javascript">
+
+		
 
 	</script>
 	<body onload="alertSize()")>
@@ -169,29 +174,115 @@
 		</section >
 		<section class="inY">
 			<p  id="contacto" class="titulosection">Contacto</p>
-			<form  >
-				<p class="texto3" >Por favor, no dude en contactar conmigo mediante el siguiente formulario. Le contestaré en la mayor brevedad posible. </p>
-				<p class="texto3"> Si prefiere enviarme un email mediante su gestior habitual puede hacerlo en cjimeneztic@gmail.com </p>
-				<br><br>
-				<p class="texto3">Nombre:</p>
-				<input   type="text" name="Nombre" placeholder="Tu nombre o empresa"/><br>
-				<br><br>
-				<p class="texto3">Asunto:</p>
-				<input   type="text" name="Asunto" placeholder="Tema del mensaje"/><br>
-				<br><br>
-				<p class="texto3">Email: </p>
-				<input   type="text" name="Email" placeholder="Un email de contacto"/><br><br><br>
-				<textarea type="text" name="Cuerpo" class="cuerpo" placeholder="Cuerpo del mensaje" /></textarea><br>
-				<br>
-				<input type="submit" value"Enviar" class="boton" ;>
-				<br><br>
+			<form method= "post" >
+			
+					<p class="texto3" >Por favor, no dude en contactar conmigo mediante el siguiente formulario. Le contestaré en la mayor brevedad posible.<br> Si prefiere enviarme un email mediante su gestior habitual puede hacerlo en cjimeneztic@gmail.com
+					</p>
+					<br><br>
+					<div id="error"></div>
+					<p class="texto3">Nombre:</p>
+					<input   type="text" name="nombre" id="nombre" placeholder="Tu nombre o empresa"/><br><br>
+					<p class="texto3">Asunto:</p>
+					<input   type="text" name="asunto" id="asunto" placeholder="Tema del mensaje"><br>
+					<br>
+					<p class="texto3">Email: </p>
+					<input   type="text" name="email" id="email" placeholder="Un email de contacto"><br><br>
+					<textarea type="text" name="cuerpo" id="cuerpo" class="cuerpo" placeholder="Cuerpo del mensaje" ></textarea><br>
+					<br><br>
+					<input type="submit" value"Enviar" class="boton" ;>
+					<br><br>
+			
 			</form>
-
 		</section>
+
+		<!--Control de campos obligatorios de formulario-->
+		 <script type="text/javascript">
+          
+	       $("form").submit(function(e){
+				
+				var error="";
+
+				if ( $("#nombre").val()==""){
+					error += "El campo nombre es obligatorio.<br>";
+				}
+
+				if ( $("#asunto").val()==""){
+					error += "El campo asunto es obligatorio.<br>";
+				}
+				if ( $("#email").val()==""){
+					error += "El campo email es obligatorio.<br>";
+				}
+				if ( $("#cuerpo").val()==""){
+					error += "El campo cuerpo es obligatorio.<br>";
+				}
+
+
+				if(error != ""){
+					$("#error").html('<div id="informe"><strong>Ha ocurrido algun problema:</strong><br>'+error+'</div>');
+						return false;
+				}
+				else{
+					
+					
+						return true;
+				}
+
+			})
+          
+   		 </script>
+
 			<div>
 				<a  href="#contacto" class="icon-envelop"></a>
 			</div>
-		</div>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+          
+   
+
+			
+		      
+		     
+      
+
+
+
+
 
 
 
