@@ -394,7 +394,7 @@ footer{
 }
 
 input, textarea{
-	border: none;
+	border: 1px solid #e2e2e2;
 	border-bottom: 2px solid gray;
 	border-left: 15px solid gray;
 	height: 30px;
