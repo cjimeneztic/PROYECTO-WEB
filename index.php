@@ -1,5 +1,5 @@
 <?php
-
+ 
 	$error= "";
 	$exito= "";
 	if($_POST){
@@ -116,7 +116,7 @@
 					<div >	
 						<ul >
 							<li ><a class="icon-arrow-left" onClick= "mostrarMenu()"  href="#"></a></li>
-							<li><a class="textoMenu" onClick= "mostrarMenu()" href="index.html"> Home </a></li>
+							<li><a class="textoMenu" onClick= "mostrarMenu()" href="index.php"> Home </a></li>
 							<li><a class="textoMenu" onClick= "mostrarMenu()" href="#serv"> Servicios </a> </li>
 							<li><a class="textoMenu" onClick= "mostrarMenu()" href="#portfolio"> Portfolio </a></li>
 							<li><a  class="textoMenu" onClick= "mostrarMenu()" href="#sobremi"> Sobre mi </a> </li>
@@ -261,7 +261,8 @@
 			</form>
 		</section>
 
-		<!--Control de los campos obligatorios de formulario-->
+		<!--Control de los campos obligatorios de formulario con jquery (front-end)-->
+		
 		 <script type="text/javascript">
 	       $("form").submit(function(e){		
 				var error="";
@@ -288,11 +289,10 @@
 
 			}) 
    		 </script>
-
 			<div>
 				<a  href="#contacto" class="icon-envelop"></a>
 			</div>
-	
+		
 
 
 
