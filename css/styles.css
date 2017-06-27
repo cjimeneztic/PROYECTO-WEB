@@ -398,6 +398,11 @@ footer{
 	color: grey;
 }
 
+
+
+
+
+
 input, textarea{
 	border: 1px solid #e2e2e2;
 	border-bottom: 2px solid gray;
@@ -413,7 +418,7 @@ form{
 	padding-left: 40px;
 }
 
-#informe{
+.informe{
 	background: #cc0052;
 	padding: 20px;
 	font-size: 1.5em;
@@ -434,17 +439,6 @@ form{
 	font-weight: bold;
 	box-shadow: 0px 0px 9px #233d58 ;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 

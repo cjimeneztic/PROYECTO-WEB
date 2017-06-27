@@ -1,3 +1,46 @@
+<?php
+
+	$error="";
+	$exito="Tu mensaje ha sido enviado correctamente";
+
+	if(!$_POST['nombre']){
+		$error.="No ha indicado ningún nombre <br>";
+	}
+		
+	if(!$_POST['asunto']){
+		$error.="No ha indicado ningún asunto <br>";
+	}
+
+	if(!$_POST['cuerpo']){
+		$error.="No has rellenado el campo cuerpo del mensaje <br>";
+	}
+	if(!$_POST['email'] && filet_var($_POST['email'], FILTER_VALIDATE_EMAIL) === false){
+		$error.= "Revisa tu correo electrónico <br>";
+	}
+
+	if($error!=''){
+		$error.="Hubo algún error al rellenar el formulario.<br>"
+	}
+	
+	else{
+
+		$destinatario ="cjimeneztic@gmail.com";
+		$asunto =$_POST['asunto'];
+		$cuerpo =$_POST['cuerpo'];
+		$emisor ="From: ".$_POST['email'];
+
+		if ( mail($destinatario, $asunto, $cuerpo, $emisor)){
+			$exito ="<div>Su mensaje ha sido enviado correctamente, me podré en contacto comn usted en breve. <br> Grácias por contactar.</div>"
+		}
+		else{
+			$error="<div id="informe">Su mensaje no ha podido ser enviado, intentelo más tarde o si lo prefiere envie un email desde su proveedor de email habitual a cjimeneztic@gmail.com"
+		}
+
+	}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 	<head>
@@ -235,7 +278,7 @@
 					error += "El campo cuerpo es obligatorio.<br>";
 				}
 				if(error != ""){
-					$("#error").html('<div id="informe"><strong>Ha ocurrido algun problema:</strong><br>'+error+'</div>');
+					$("#error").html('<div class="informe"><strong>Ha ocurrido algun problema:</strong><br>'+error+'</div>');
 						return false;
 				}
 				else{	
