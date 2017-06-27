@@ -1,44 +1,45 @@
 <?php
 
-	$error="";
-	$exito="Tu mensaje ha sido enviado correctamente";
+	$error= "";
+	$exito= "";
+	if($_POST){
+		if(!$_POST["nombre"]){
+			$error.="No ha indicado ningún nombre. <br>";
+		}
+			
+		if(!$_POST["asunto"]){
+			$error.="No ha indicado ningún asunto. <br>";
+		}
 
-	if(!$_POST['nombre']){
-		$error.="No ha indicado ningún nombre <br>";
-	}
+		if(!$_POST["cuerpo"]){
+			$error.="No has rellenado el campo cuerpo del mensaje. <br>";
+		}
+
+		if(!$_POST["email"] && filter_var($_POST["email"], FILTER_VALIDATE_EMAIL) === false){
+			$error.= "Revisa tu correo electrónico. <br>";
+		}
+
+		if($error!=""){
+			$error.="Hubo algún error al rellenar el formulario.<br>";
+		}
 		
-	if(!$_POST['asunto']){
-		$error.="No ha indicado ningún asunto <br>";
-	}
-
-	if(!$_POST['cuerpo']){
-		$error.="No has rellenado el campo cuerpo del mensaje <br>";
-	}
-	if(!$_POST['email'] && filet_var($_POST['email'], FILTER_VALIDATE_EMAIL) === false){
-		$error.= "Revisa tu correo electrónico <br>";
-	}
-
-	if($error!=''){
-		$error.="Hubo algún error al rellenar el formulario.<br>"
-	}
-	
-	else{
-
-		$destinatario ="cjimeneztic@gmail.com";
-		$asunto =$_POST['asunto'];
-		$cuerpo =$_POST['cuerpo'];
-		$emisor ="From: ".$_POST['email'];
-
-		if ( mail($destinatario, $asunto, $cuerpo, $emisor)){
-			$exito ="<div>Su mensaje ha sido enviado correctamente, me podré en contacto comn usted en breve. <br> Grácias por contactar.</div>"
-		}
 		else{
-			$error="<div id="informe">Su mensaje no ha podido ser enviado, intentelo más tarde o si lo prefiere envie un email desde su proveedor de email habitual a cjimeneztic@gmail.com"
+
+			$destinatario ="cjimeneztic@gmail.com";
+			$asunto =$_POST["asunto"];
+			$cuerpo =$_POST["cuerpo"];
+			$emisor ="From: ".$_POST["email"];
+
+			if ( mail($destinatario, $asunto, $cuerpo, $emisor)){
+				$exito ="<div>Su mensaje ha sido enviado correctamente, me podré en contacto comn usted en breve. <br> Grácias por contactar.</div>";
+			}
+			else{
+				$error='<div class="informe">Su mensaje no ha podido ser enviado, intentelo más tarde o si lo prefiere envie un email desde su proveedor de email habitual a cjimeneztic@gmail.com';
+			}
+
 		}
 
 	}
-
-
 ?>
 
 <!DOCTYPE html>
@@ -244,7 +245,7 @@
 					<p class="texto3" >Por favor, no dude en contactar conmigo mediante el siguiente formulario. Le contestaré en la mayor brevedad posible.<br> Si prefiere enviarme un email mediante su gestior habitual puede hacerlo en <strong>cjimeneztic@gmail.com</strong>
 					</p>
 					<br>
-					<div id="error"></div>
+					<div id="error"><? echo $error.$exito; ?></div>
 					<p class="texto3">Nombre:</p>
 					<input   type="text" name="nombre" id="nombre" placeholder="Tu nombre o empresa"/><br><br>
 					<p class="texto3">Asunto:</p>
