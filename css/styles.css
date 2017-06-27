@@ -40,8 +40,7 @@ section {
 	background: #eff5f5;
 	width: 100%;
 	padding-top: 0px;
-	
-
+	z-index: 99;
 }
 
 
@@ -454,19 +453,26 @@ form{
 
 }
 
+.fondoSobreMi{
+	background-image: url("../img/teclado2.jpg");
+	z-index: 99;
+	position: relative;
+}
+
 .skills{
+	position: relative;
 	color: black;
+	background: #eff5f5;
 	display: inline-block;
 	text-align: justify;
 	margin: red;
 	font-size: 1.4em;
-	
+	line-height: 40px;
 	margin: 20px;
-
 	padding: 25px;
 	box-shadow: 0px 0px 9px #233d58 ;
 }
-}
+
 	
 
 /*icono sobre */
@@ -719,17 +725,33 @@ form{
 		width: 80px;
 		height: 80px;
 		border-radius: 50%;
-		
-		top: 85%;
-		left: 90%;
+		top: 95%;
+		left: 95%;
 		right: 10%;
 		z-index: 9999;
+		overflow: hidden;
 
 	}
 	.textoServicio{
 		text-align: left;
 		font-size: 0.7em;
 		color: grey;
+}
+
+.skills{
+	position: relative;
+	height: 600px;
+	width: 600px;
+	color: black;
+	display: inline-block;
+	text-align: justify;
+	margin: red;
+	font-size: 1.4em;
+	line-height: 40px;
+	margin: 20px;
+	padding: 25px;
+	box-shadow: 0px 0px 9px #233d58 ;
+	overflow: hidden;
 }
 	
 
