@@ -1,46 +1,4 @@
-<?php
- 
-	$error= "";
-	$exito= "";
-	if($_POST){
-		if(!$_POST["nombre"]){
-			$error.="No ha indicado ningún nombre. <br>";
-		}
-			
-		if(!$_POST["asunto"]){
-			$error.="No ha indicado ningún asunto. <br>";
-		}
 
-		if(!$_POST["cuerpo"]){
-			$error.="No has rellenado el campo cuerpo del mensaje. <br>";
-		}
-
-		if(!$_POST["email"] && filter_var($_POST["email"], FILTER_VALIDATE_EMAIL) === false){
-			$error.= "Revisa tu correo electrónico. <br>";
-		}
-
-		if($error!=""){
-			$error.="Hubo algún error al rellenar el formulario.<br>";
-		}
-		
-		else{
-
-			$destinatario ="cjimeneztic@gmail.com";
-			$asunto =$_POST["asunto"];
-			$cuerpo =$_POST["cuerpo"];
-			$emisor ="From: ".$_POST["email"];
-
-			if ( mail($destinatario, $asunto, $cuerpo, $emisor)){
-				$exito ="<div>Su mensaje ha sido enviado correctamente, me podré en contacto comn usted en breve. <br> Grácias por contactar.</div>";
-			}
-			else{
-				$error='<div class="informe">Su mensaje no ha podido ser enviado, intentelo más tarde o si lo prefiere envie un email desde su proveedor de email habitual a cjimeneztic@gmail.com';
-			}
-
-		}
-
-	}
-?>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -55,8 +13,6 @@
 		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">	
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>	
 		
-		
-			
 	</head>
 	<script type="text/javascript">
 	
@@ -68,7 +24,7 @@
 		  } 
 			menu=document.getElementById("menu");
 
-		  	if( myWidth < 600){
+		  	if( myWidth < 1080){
 		  		menu.style.display= "none";
 		  	}else{
 		  		menu.style.display= "block";
@@ -87,7 +43,7 @@
 		    }
 			menu=document.getElementById("menu");
 
-		  	if( myWidth < 600){
+		  	if( myWidth < 1080){
 			
 				if(mostrar== "none")
 				{
@@ -105,11 +61,7 @@
 
 	</script>
 
-	<script type="text/javascript">
-
-		
-
-	</script>
+	
 	<body onload="alertSize()")>
 		<header>
 				<nav  id="menu" class="in" >
@@ -153,7 +105,7 @@
 				<center>
 					<div class="servicios"> 
 						<figure class="icon-cogs"></figure>
-						<p> Servicio técnico </p>
+						<p class="textoGrande"> Servicio técnico </p>
 							<ol class="textoServicio">Reparación de ordenadores y dispositivos móviles </ol>
 							<ol class="textoServicio">Mantenimiento de sistemas de empresas y particulares</ol>
 							<ol class="textoServicio">Servidores de datos, aplicaciones y correo electrónico</ol>
@@ -168,14 +120,12 @@
 					<div class="servicios" > 
 						
 						<figure class="icon-earth"></figure>
-						<p> Desarrollo web </p>	
+						<p class="textoGrande"> Desarrollo web </p>	
 							<ol class="textoServicio">Registro de dominios</ol>
 							<ol class="textoServicio">Gestión de hostings</ol>
 							<ol class="textoServicio">Diseño y mantenimiento de páginas web</ol>
 							<ol class="textoServicio">Implementación de e-commerce con Wordpress y Prestashop</ol>
 							<ol class="textoServicio">Otros servicios relacionados <br><a id="info"href="#contacto"> (consultar aquí)</a></ol>
-
-							
 
 					</div>
 
@@ -183,35 +133,38 @@
 				
 		</section>
 		
-		<section class="inY">
+		<section >
 			<p id="portfolio" class="titulosection">Portfolio</p>
 			<center>
-			<div class="proyecto"> Web comercial Bar restaurante
+			<div class="proyecto"> 
+				<p class="textoGrande">Web comercial Bar restaurante</p>
 				<img src="img/bar.png" class="proyectoInterior">
-				<p  class="texto">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+				<p  class="textoGrande">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
 				<button class="boton" href="http://www.barcalatony.es/"> ver </button>
 			</div>
-			<div class="proyecto"> Libro "Seguridad en redes y sistemas"
+			<div class="proyecto"> 
+				<p class="textoGrande">Libro "Seguridad en redes y sistemas"</p>
 				<img src="img/itsecurity.jpg" class="proyectoInterior">
-				<p class="texto">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+				<p class="textoGrande">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 				<button class="boton"> Descarga pdf </button>
 			</div>
-			<div class="proyecto"> Próximamente
+			<div class="proyecto"> 
+				<p class="textoGrande">Próximamente</p>
 				<img src="img/proximamente.png" class="proyectoInterior">
-				<p class="texto">Próximos proyectos en desarrollo</p>
-				<button class="boton"> ver </button>
+				<p class="textoGrande">Próximos proyectos en desarrollo</p>
+				
 			</div>
 			
 			</center>
-		</section class="inY" >
+		</section  >
 		
-		<section class="inY" >
+		<section  >
 			<p id="sobremi" class="titulosection">Sobre mi</p>
 		
 			<center class="fondoSobreMi">
 				<div class="skills">
 					<p class="subtitulo2">Mi experiencia</p>
-					<p>
+					<p class="textoGrande">
 						&bull; <strong>Más de diez años trabajando como técnico informático freelance</strong>, atendiendo las necesidades de todo tipo de usuarios.<br>
 						&bull; Más de diez años al frente de un local de restauración.<br>
 						&bull; <strong>Graduado en Ingeniería Informática</strong> por la Universidad Oberta de Catalunya en el año 2017.<br>
@@ -222,7 +175,7 @@
 
 				<div class="skills">
 					<p class="subtitulo2">Skills</p>
-					<p>
+					<p class="textoGrande">
 					&bull; Conocimientos en lenguajes de <strong>programación y desarrollo web </strong>como C, Java, Python, SQL, HTML5/CSS3, Javascript. <br>
 					&bull; GNU/Linux, Windows XP/7/Vista/8/10, Android, MACOSX, iOS.<br>
 					&bull; Administración y gestión de routers Cisco, Wi-fi, switching, LAN/WAN, Firewalls.<br>
@@ -238,7 +191,7 @@
 				</center>
 			
 		</section >
-		<section class="inY">
+		<section >
 			<p  id="contacto" class="titulosection">Contacto</p>
 			<form method= "post" >
 			
@@ -301,6 +254,10 @@
 			
 			<br><p class="texto2">.-  Web hecha íntegra y excusivamente con html5/css3 y Javascript, siguiendo las técnicas y directrices de responsive design, mobile first y posicionamiento SEO  .-
 			</p><br>
+			<center>
+				
+
+			</center>
 	
 	</footer>
 </html>
