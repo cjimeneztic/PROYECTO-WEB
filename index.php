@@ -255,7 +255,7 @@
 	</body>
 	<footer>
 		
-			<br><br><br><br><p class="texto2">.-  Web hecha íntegra y excusivamente con html5/css3 y Javascript, siguiendo las técnicas y directrices de responsive design, mobile first y posicionamiento SEO  .-
+			<br><br><br><p class="texto2">.-  Web hecha íntegra y excusivamente con html5/css3 y Javascript, siguiendo las técnicas y directrices de responsive design, mobile first y posicionamiento SEO  .-
 			
 			<br><center><p class="texto2">&copy;2017 Todos los derechos reservados</p></center>
 			
