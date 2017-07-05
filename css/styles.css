@@ -192,7 +192,7 @@ footer{
 	position: relative;
 	font-size: 200px;
 	color: #e6b800;
-	margin-top: 80px;
+	margin: 10px;
 	width: 100%;
 	text-align: center;
 	
@@ -381,10 +381,10 @@ footer{
 
 .texto3{
 	color: black;
-	text-align: justify;
+	text-align: center;
 	font-size: 3em;
 	margin-left: 15px;
-	margin-right: 15px;
+	margin-right: 35px;
 }
 
 .texto4{
@@ -405,15 +405,23 @@ input, textarea{
 	border: 1px solid #e2e2e2;
 	border-bottom: 2px solid gray;
 	border-left: 15px solid gray;
-	height: 30px;
-	width: 250px;
+	height: 130px;
+	width: 90%;
     padding: 5px;
     border-radius: 2%;
+    margin: 50px;
 
+}
+input::-webkit-input-placeholder {
+    font-size: 2.4em;
+}
+input::-moz-placeholder {
+    font-size: 2.4em;
 }
 
 form{
 	padding-left: 40px;
+	overflow: hidden;
 }
 
 .informe{
@@ -439,17 +447,23 @@ form{
 }
 
 .textoGrande{
-	font-size: 1.5em;
+	font-size: 50px;
+	font-weight: 10px;
 	margin: 40px;
-	font-height: 55px;
+	line-height: 65px;
 }
 
-
+hr {
+	border: 0 ; 
+	border-top: 4px double grey; 
+	width: 90%;
+}
 
 .subtitulo2{
 	font-size: 3em;
 	color: #e6b800;
 	margin-left: 20px;
+	text-align: center;
 
 }
 
@@ -483,9 +497,9 @@ form{
   	position: fixed;
   	border-radius: 50%;
 	top: 80%;
-	left: 65%;
+	left: 750px;
   	color: white;
-  	font-size: 10.5em;
+  	font-size: 170px;
   	padding-top: 20px;
   	padding-left: 30px;
   	margin-right: 10px;

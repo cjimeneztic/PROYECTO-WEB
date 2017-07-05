@@ -95,7 +95,7 @@
 					
 			</h2>
 			<h1  >
-					 <p class="subtitulo">Administración de Sistemas <br> Desarrollo Web 
+					 <p class="subtitulo">| Administración de Sistemas | <br> | Desarrollo Web |
 					 </p>
 			</h1>
 			
@@ -165,10 +165,13 @@
 				<div class="skills">
 					<p class="subtitulo2">Mi experiencia</p>
 					<p class="textoGrande">
-						&bull; <strong>Más de diez años trabajando como técnico informático freelance</strong>, atendiendo las necesidades de todo tipo de usuarios.<br>
-						&bull; Más de diez años al frente de un local de restauración.<br>
-						&bull; <strong>Graduado en Ingeniería Informática</strong> por la Universidad Oberta de Catalunya en el año 2017.<br>
-						&bull; <strong>Master en Seguridad de las TIC </strong>por la Universidad Oberta de Catalunya ( en curso ).<br>
+					 <strong>Más de diez años trabajando como técnico informático freelance</strong>, atendiendo las necesidades de todo tipo de usuarios.<br></p>
+					<hr>
+	 				<p class="textoGrande">Más de diez años al frente de un local de restauración.<br></p>
+	 				<hr>
+		 			<p class="textoGrande"><strong>Graduado en Ingeniería Informática</strong> por la Universidad Oberta de Catalunya en el año 2017.<br></p>
+					<hr>
+					<p class="textoGrande"> <strong>Master en Seguridad de las TIC </strong>por la Universidad Oberta de Catalunya ( en curso ).<br></p>
 
 					</p>
 				</div>
@@ -176,15 +179,16 @@
 				<div class="skills">
 					<p class="subtitulo2">Skills</p>
 					<p class="textoGrande">
-					&bull; Conocimientos en lenguajes de <strong>programación y desarrollo web </strong>como C, Java, Python, SQL, HTML5/CSS3, Javascript. <br>
-					&bull; GNU/Linux, Windows XP/7/Vista/8/10, Android, MACOSX, iOS.<br>
-					&bull; Administración y gestión de routers Cisco, Wi-fi, switching, LAN/WAN, Firewalls.<br>
-					&bull; <strong>Bases de datos</strong> como Oracle SQL, PostgreSQL.<br>
-					&bull; <strong>Administración y desarrollo de CMS</strong> como Prestashop y Wordpress.<br>
-					&bull; Microsoft Office, LibreOffice.<br>
-					&bull; <strong>Mantenimento de hardware</strong> como CPU's, HDD, Motherboards, GPU, etc.<br>
-					Además...<br>SEO, LAMP, GitHub,  VMware, VirtualBOX, Photoshop, Google Apps.<br>
-					</p>
+					 Conocimientos en lenguajes de <strong>programación y desarrollo web </strong>como C, Java, Python, SQL, HTML5/CSS3, Javascript. <br>
+					 GNU/Linux, Windows XP/7/Vista/8/10, Android, MACOSX, iOS.<br></p>
+					 <hr>
+					 <p class="textoGrande">Administración y gestión de routers Cisco, Wi-fi, switching, LAN/WAN, Firewalls.<br></p> <hr>
+					  <p class="textoGrande"><strong>Bases de datos</strong> como Oracle SQL, PostgreSQL.<br></p> <hr>
+					  <p class="textoGrande"><strong>Administración y desarrollo de CMS</strong> como Prestashop y Wordpress.<br></p> <hr>
+					 <p class="textoGrande"> Microsoft Office, LibreOffice.<br></p> <hr>
+					 <p class="textoGrande"> <strong>Mantenimento de hardware</strong> como CPU's, HDD, Motherboards, GPU, etc.<br></p> <hr>
+					 <p class="textoGrande">Además...<br>SEO, LAMP, GitHub,  VMware, VirtualBOX, Photoshop, Google Apps.<br></p> <hr>
+				
 
 
 				</div>
@@ -194,21 +198,23 @@
 		<section >
 			<p  id="contacto" class="titulosection">Contacto</p>
 			<form method= "post" >
-			
-					<p class="texto3" >Por favor, no dude en contactar conmigo mediante el siguiente formulario. Le contestaré en la mayor brevedad posible.<br> Si prefiere enviarme un email mediante su gestior habitual puede hacerlo en <strong>cjimeneztic@gmail.com</strong>
+					<center>
+					<p class="texto3" >Le contestaré en la mayor brevedad posible.
+						<br><br> O si lo prefiere contácte conmigo en <strong>cjimeneztic@gmail.com</strong>
 					</p>
+					</center>
 					<br>
 					<div id="error"><? echo $error.$exito; ?></div>
-					<p class="texto3">Nombre:</p>
+				
 					<input   type="text" name="nombre" id="nombre" placeholder="Tu nombre o empresa"/><br><br>
-					<p class="texto3">Asunto:</p>
+					
 					<input   type="text" name="asunto" id="asunto" placeholder="Tema del mensaje"><br>
 					<br>
-					<p class="texto3">Email: </p>
+					
 					<input   type="email" name="email" id="email" placeholder="Un email de contacto" ><br><br>
-					<textarea type="text" name="cuerpo" id="cuerpo" class="cuerpo" placeholder="Cuerpo del mensaje" ></textarea><br>
+					<textarea type="text" name="cuerpo" id="cuerpo" placeholder="Cuerpo del mensaje" ></textarea><br>
 					<br><br>
-					<input type="submit" value"Enviar" class="boton" ;>
+					<input type="submit" value="Enviar" class="boton" ;>
 					<br><br>
 			
 			</form>
