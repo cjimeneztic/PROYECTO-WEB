@@ -318,7 +318,7 @@ footer{
 .proyecto {
 	display: inline-block;
 	width: 700px;
-	height: 1280px;
+	height: 1300px;
 	margin: 25px;
 	text-align: center;
 	margin-left: 5px;
@@ -329,6 +329,9 @@ footer{
 	padding: 18px;
 	overflow: hidden;
 
+}
+.link{
+	font-size: 50px;
 }
 
 .proyecto:hover{

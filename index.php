@@ -140,14 +140,15 @@
 			<div class="proyecto"> 
 				<p class="textoGrande">Web comercial Bar restaurante</p>
 				<img src="img/bar.png" class="proyectoInterior">
-				<p  class="textoGrande2">Página web sencilla y directa dónde se muestran los principales servicios de un local de restauración de Girona. <br>Actualmente se encuentra en optimización para smartphones y SEO </p>
-				<a  href="http://www.barcalatony.es/" target="blank"> Acceder </a>
+				<p  class="textoGrande2">Página web sencilla y directa dónde se muestran los principales servicios de un local de restauración de Girona. 
+					<br>Está escrita en HTML5/CSS3 y Javascript y principalmente consta de un carrousel de servicios, opiniones de clientes y ubicación del local.<br>Actualmente se encuentra en optimización para smartphones y SEO </p>
+				<a  class="link" href="http://www.barcalatony.es/" target="blank"> Acceder </a>
 			</div>
 			<div class="proyecto"> 
 				<p class="textoGrande">Libro "Seguridad en redes y sistemas"</p>
 				<img src="img/itsecurity.jpg" class="proyectoInterior">
-				<p class="textoGrande2">Documento propio basado en el trabajo final de carrera (2017) dónde se obtuvo la nota máxima. <br>Es un libro dónde se recopilan un gran número de técnicas y áreas de seguridad informática. Tambíen se icluyen algunas pruevas de concepto. <br>Documento en revisión constante</p>
-				<a href=".." class=""> Descarga pdf </a>
+				<p class="textoGrande2">Documento propio basado en el trabajo final de carrera (2017) dónde se obtuvo la nota máxima. <br>Es un libro dónde se recopilan un gran número de técnicas y áreas de seguridad informática. Tambíen se icluyen algunas pruevas de concepto. <br>Documento en revisión constante.</p>
+				<a href=".." class="link"> Descarga pdf </a>
 			</div>
 			<div class="proyecto"> 
 				<p class="textoGrande">Próximamente</p>
