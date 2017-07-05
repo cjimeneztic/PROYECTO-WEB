@@ -456,6 +456,14 @@ form{
 	line-height: 65px;
 }
 
+.textoGrande2{
+	font-size: 1.1em;
+	font-weight: 10px;
+	margin: 50px;
+	line-height: 65px;
+	text-align: justify;
+}
+
 hr {
 	border: 0 ; 
 	border-top: 4px double grey; 
