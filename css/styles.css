@@ -151,8 +151,9 @@ footer{
 	font-family: 'Oswald', sans-serif;
 	margin-bottom: 0px;
 	padding-bottom: 0px;
-	height: 200px;
+	height: 600px;
 	background-color: black;
+	text-align: center;
 	
 }
 
@@ -371,9 +372,9 @@ footer{
 
 .texto2{
 	color: white;
-	text-align: justify;
+	text-align: center;
 	margin: red;
-	font-size: 1.6em;
+	font-size: 2em;
 	margin-left: 5px;
 	margin-right: 5px;
 

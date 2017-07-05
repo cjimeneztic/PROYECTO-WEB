@@ -125,6 +125,7 @@
 							<ol class="textoServicio">Gestión de hostings</ol>
 							<ol class="textoServicio">Diseño y mantenimiento de páginas web</ol>
 							<ol class="textoServicio">Implementación de e-commerce con Wordpress y Prestashop</ol>
+							<ol class="textoServicio">Posicionamiento SEO en motores de búsqueda como Google o Bing</ol>
 							<ol class="textoServicio">Otros servicios relacionados <br><a id="info"href="#contacto"> (consultar aquí)</a></ol>
 
 					</div>
@@ -172,24 +173,20 @@
 		 			<p class="textoGrande"><strong>Graduado en Ingeniería Informática</strong> por la Universidad Oberta de Catalunya en el año 2017.<br></p>
 					<hr>
 					<p class="textoGrande"> <strong>Master en Seguridad de las TIC </strong>por la Universidad Oberta de Catalunya ( en curso ).<br></p>
-
-					</p>
 				</div>
 
 				<div class="skills">
 					<p class="subtitulo2">Skills</p>
 					<p class="textoGrande">
-					 Conocimientos en lenguajes de <strong>programación y desarrollo web </strong>como C, Java, Python, SQL, HTML5/CSS3, Javascript. <br>
+					 Lenguajes de <strong>programación y desarrollo web </strong>como C, Java, Python, SQL, HTML5/CSS3, Javascript. <br>
 					 GNU/Linux, Windows XP/7/Vista/8/10, Android, MACOSX, iOS.<br></p>
 					 <hr>
 					 <p class="textoGrande">Administración y gestión de routers Cisco, Wi-fi, switching, LAN/WAN, Firewalls.<br></p> <hr>
-					  <p class="textoGrande"><strong>Bases de datos</strong> como Oracle SQL, PostgreSQL.<br></p> <hr>
-					  <p class="textoGrande"><strong>Administración y desarrollo de CMS</strong> como Prestashop y Wordpress.<br></p> <hr>
+					 <p class="textoGrande"><strong>Bases de datos</strong> como Oracle SQL, PostgreSQL.<br></p> <hr>
+					 <p class="textoGrande"><strong>Administración y desarrollo de CMS</strong> como Prestashop y Wordpress.<br></p> <hr>
 					 <p class="textoGrande"> Microsoft Office, LibreOffice.<br></p> <hr>
 					 <p class="textoGrande"> <strong>Mantenimento de hardware</strong> como CPU's, HDD, Motherboards, GPU, etc.<br></p> <hr>
-					 <p class="textoGrande">Además...<br>SEO, LAMP, GitHub,  VMware, VirtualBOX, Photoshop, Google Apps.<br></p> <hr>
-				
-
+					 <p class="textoGrande"><strong>Además...</strong><br>SEO, LAMP, GitHub,  VMware, VirtualBOX, Photoshop, Google Apps.<br></p>
 
 				</div>
 				</center>
@@ -257,13 +254,14 @@
 
 	</body>
 	<footer>
+		
+			<br><br><br><br><p class="texto2">.-  Web hecha íntegra y excusivamente con html5/css3 y Javascript, siguiendo las técnicas y directrices de responsive design, mobile first y posicionamiento SEO  .-
 			
-			<br><p class="texto2">.-  Web hecha íntegra y excusivamente con html5/css3 y Javascript, siguiendo las técnicas y directrices de responsive design, mobile first y posicionamiento SEO  .-
-			</p><br>
-			<center>
-				
-
-			</center>
+			<br><center><p class="texto2">&copy;2017 Todos los derechos reservados</p></center>
+			
+		
+			
+		
 	
 	</footer>
 </html>
