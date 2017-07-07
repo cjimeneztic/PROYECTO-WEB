@@ -142,10 +142,7 @@ center{
 	}
 
 }
-#formulario{
-	margin: 50px;
-	left: 
-}
+
 
 
 footer{
@@ -434,6 +431,14 @@ input::-webkit-input-placeholder {
 input::-moz-placeholder {
     font-size: 50px;
 }
+}
+input::-o-placeholder {
+    font-size: 50px;
+}
+}
+input::-ms-placeholder {
+    font-size: 50px;
+}
 input:focus{
 	font-size: 50px;
 }
@@ -446,6 +451,12 @@ textarea::-webkit-input-placeholder {
 textarea::-moz-placeholder {
     font-size: 50px;
 }
+textarea::-o-placeholder {
+    font-size: 50px;
+}
+textarea::-ms-placeholder {
+    font-size: 50px;
+}
 
 form{
 	padding-left: 40px;
@@ -455,7 +466,7 @@ form{
 .informe{
 	background: #cc0052;
 	padding: 20px;
-	font-size: 1.5em;
+	font-size: 1.3em;
 	color: white;
 }
 
@@ -685,6 +696,7 @@ hr {
 	center{
 		width: 100%;
 	}
+
 	nav, li, ul, a{
 		position: relative;
 		display: inline-block;
@@ -692,13 +704,14 @@ hr {
 		margin-left: 0px;
 		padding-left: 0px;
 		margin-top: 0px;
-		height: 1.4em;
+		
 		font-size: 1.2em;
 		text-align: right;
 		margin-bottom: 0px;
 		padding-bottom: 0px;
 		vertical-align: top;
 		margin-right: 5px;
+		top: -40px;
 		
 		
 	}
@@ -715,10 +728,10 @@ hr {
 
 	#menu{
 		width: 100%;
-		height: 20%;
+		height: 10%;
 		min-width: 20%;
-		min-height: 5%;
-		height: 20px;
+		min-height: 0%;
+		height: 40px;
 		top: 0%;
 		border-right: none;
 		border-left: none;
@@ -728,8 +741,14 @@ hr {
 		margin-right: 8px;
 		background: #3b5e5e;
 		vertical-align: center;
-		
+		padding-top: 10px;
+		padding-bottom: 10px;
 	
+	}
+	.textoMenu{
+		color: white;
+		top: 10px;
+		text-decoration: none;
 	}
 	#atras{
 		display: none;
@@ -912,6 +931,18 @@ hr {
 		z-index: 99;
 		position: relative;
 		overflow: hidden;
+	}
+	#serv{
+	padding-top: 60px;
+	}
+	#portfolio{
+		padding-top: 60px;
+	}
+	#sobremi{
+		padding-top: 60px;
+	}
+	#contacto{
+		padding-top: 60px;
 	}
 
 	

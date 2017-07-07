@@ -1,4 +1,46 @@
+<?php
+ 
+	$error= "";
+	$exito= "";
+	if($_POST){
+		if(!$_POST["nombre"]){
+			$error.="No ha indicado ningún nombre. <br>";
+		}
+			
+		if(!$_POST["asunto"]){
+			$error.="No ha indicado ningún asunto. <br>";
+		}
 
+		if(!$_POST["cuerpo"]){
+			$error.="No has rellenado el campo cuerpo del mensaje. <br>";
+		}
+
+		if(!$_POST["email"] && filter_var($_POST["email"], FILTER_VALIDATE_EMAIL) === false){
+			$error.= "Revisa tu correo electrónico. <br>";
+		}
+
+		if($error!=""){
+			$error.="Hubo algún error al rellenar el formulario.<br>";
+		}
+		
+		else{
+
+			$destinatario ="cjimeneztic@gmail.com";
+			$asunto =$_POST["asunto"];
+			$cuerpo =$_POST["cuerpo"];
+			$emisor ="From: ".$_POST["email"];
+
+			if ( mail($destinatario, $asunto, $cuerpo, $emisor)){
+				$exito ="<div class='texto3'>Su mensaje ha sido enviado correctamente, me podré en contacto comn usted en breve. <br> Grácias por contactar.</div>";
+			}
+			else{
+				$error='<div class="informe">Su mensaje no ha podido ser enviado, intentelo más tarde o si lo prefiere envie un email desde su proveedor de email habitual a cjimeneztic@gmail.com';
+			}
+
+		}
+
+	}
+?>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -128,7 +170,7 @@
 							<ol class="textoServicio">Diseño y mantenimiento de páginas web</ol>
 							<ol class="textoServicio">Implementación de e-commerce con Wordpress y Prestashop</ol>
 							<ol class="textoServicio">Posicionamiento SEO en motores de búsqueda como Google o Bing</ol>
-							<ol class="textoServicio">Otros servicios relacionados <br><a id="info"href="#contacto">(consultar aquí)</a></ol>
+							<ol class="textoServicio">Otros servicios relacionados <br><br><a id="info" href="#contacto">(consultar aquí)</a></ol>
 
 					</div>
 
