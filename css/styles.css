@@ -161,7 +161,7 @@ footer{
 
 #cabecera{
 	margin-top: 70px;
-	padding-top: -48px;
+	padding-top: -60px;
 	background-image: url("../img/teclado.jpg");
 	/*background-attachment: fixed;*/
 	box-shadow: 0px 0px 9px #233d58 ;
@@ -373,17 +373,8 @@ footer{
 	font-size: 40px;
 	overflow: hidden;
 }	
-}
 
-.cara{
-	border-radius: 50%;
-	padding: 0px;
-	border: 2px solid #E5E5F4;
-	height: 200px;
-	margin-bottom: 5px;
-	margin-left: 5%;
-	
-}
+
 
 .texto{
 	color: black;
@@ -518,7 +509,8 @@ hr {
 
 .fondoSobreMi{
 	background: white;
-	/*background-attachment: fixed;*/
+	background-attachment: fixed;
+	background-image: url("../img/barcelona.jpg");
 	box-shadow: 0px 0px 9px #233d58 ;
 	z-index: 99;
 	position: relative;
@@ -616,6 +608,44 @@ hr {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*----POR DEFECTO, EN RESPONSIVE DESIGN ES MOBILE FIRST----*/
 
 
@@ -627,15 +657,18 @@ hr {
 		background: #eff5f5;
 		padding: 0px;
 		margin: 0px;
+
 	}
 	header{
 		padding: 0px;
 		margin: 0px;
 		background: #eff5f5;
+		overflow: hidden;
 	}
 	#cabecera{
 		position: relative;
-		top: 32px;
+		top: -50px;
+		width: 100%;
 
 	}
 	#titulo{
@@ -648,9 +681,7 @@ hr {
 
 	}
 
-	.textoMenu{
-		color: white;
-	}
+
 	center{
 		width: 100%;
 	}
@@ -660,7 +691,7 @@ hr {
 		color: white;
 		margin-left: 0px;
 		padding-left: 0px;
-		margin-top: -1px;
+		margin-top: 0px;
 		height: 1.4em;
 		font-size: 1.2em;
 		text-align: right;
@@ -668,6 +699,7 @@ hr {
 		padding-bottom: 0px;
 		vertical-align: top;
 		margin-right: 5px;
+		
 		
 	}
 	.icon-arrow-left:before{
@@ -696,6 +728,7 @@ hr {
 		margin-right: 8px;
 		background: #3b5e5e;
 		vertical-align: center;
+		
 	
 	}
 	#atras{
@@ -705,15 +738,7 @@ hr {
 	.titulo_resaltado2{
 		display: none;
 	}
-	.cara{
-		border-radius: 5%;
-		padding: 0px;
-		border: 2px solid #E5E5F4;
-		height: 200px;
-		margin-bottom: 5px;
-		margin-left: 5px;
-		
-	}
+
 	.cuerpo{
 		margin: 0px; 
 		width: 500px; 
@@ -723,7 +748,7 @@ hr {
 		position: relative;
 		display: inline-block;
 		width: 600px;
-		height: 750px;
+		height: 1050px;
 
 		text-align: center;
 		padding: 40px;
@@ -733,91 +758,163 @@ hr {
 		overflow: hidden;
 }	
 
+/*icono sobre */
+.icon-envelop:before {
+  	content: "\e945";
+  	position: fixed;
+  	border-radius: 50%;
+	top: 80%;
+	left: 1550px;
+  	color: white;
+  	font-size: 110px;
+  	padding-top: 15px;
+  	padding-left: 20px;
+  	margin-right: 40px;
+  	z-index: 99999;
+  	background-color: red;
+	position: fixed;
+	width: 130px;
+	height: 130px;
+	box-shadow: 0px 0px 9px #233d58 ;
+	text-align: left;
+}	
 
-	.icon-envelop {
-	  	font-size: 1em;
-	  	padding-top: 22px;
-	  	text-align: left;	
-}
 	.textoServicio{
 		text-align: left;
 		font-size: 0.8em;
 		color: grey;
-}
-	.proyecto{
-		
-
-	}
-
-	
-
-}
-
-
-
-/*medidas para pc de sobremesa*/
-@media screen and (min-width: 1080px){
-	body{
-		background : #eff5f5;
-	}
-	li{
-		display: inline-block;
 	}
 	
-	.cara{
-		border-radius: 5%;
-		padding: 0px;
-		border: 2px solid #E5E5F4;
-		height: 200px;
-		margin-bottom: 5px;
-		margin-left: 5px;
-		
-	}
-	#menu{
-		display: inline-block;
-		background: none;	
-		font-size: 17px;
-		margin-right: 8px;
-		background: #3b5e5e;
-	
-	}
-	#linkmenu{
-		display: none;
-	}
-	.contactoRapido{
-		background-color: red;
-		position: fixed;
-		width: 80px;
+
+	input,textarea{
+		border: 1px solid #e2e2e2;
+		border-bottom: 2px solid gray;
+		border-left: 15px solid gray;
 		height: 80px;
-		border-radius: 50%;
-		top: 95%;
-		left: 95%;
-		right: 10%;
-		z-index: 9999;
+		width: 40%;
+	    padding: 5px;
+	    border-radius: 2%;
+	    margin: 90px;
+
+	}
+	input::-webkit-input-placeholder {
+	    font-size: 30px;
+	}
+	input::-moz-placeholder {
+	    font-size: 30px;
+	}
+	input:focus{
+		font-size: 30px;
+	}
+	textarea:focus{
+		font-size: 30px;
+	}
+	textarea::-webkit-input-placeholder {
+	    font-size: 30px;
+	}
+	textarea::-moz-placeholder {
+	    font-size: 30px;
+	}
+	.textoGrande{
+		font-size: 30px;
+		font-weight: 10px;
+		margin: 40px;
+		line-height: 30px;
+	}
+
+	.textoGrande2{
+		font-size: 25px;
+		font-weight: 10px;
+		margin: 50px;
+		line-height: 30px;
+		text-align: justify;
+	}
+	.boton{
+	font-size: 30px;
+	
+	}
+	.titulo{
+		position: relative;
+		font-size: 150px;
+		color: #e6b800;
+		margin: 10px;
+		width: 100%;
+		text-align: center;
+	
+	/*box-shadow: 0px 0px 9px red;*/
+	}
+	.titulosection{
+		margin-top: 5% ;
+		margin: 40px;
+		text-align: center;
+		color: #3b5e5e;
+		font-weight: bold;
+		font-size: 4em;
+		padding-bottom: 0px;
+
+	}
+	.link{
+		color: #3b5e5e;
+	}
+	.texto3{
+		font-size: 30px;
+	}
+	.proyecto {
+		display: inline-block;
+		width: 500px;
+		height: 800px;
+		margin: 25px;
+		text-align: center;
+		margin-left: 5px;
+		margin-right: 5px;
+		padding: 0px;
+		background-color: #E5E5F4;
+		font-size: 2.2em;
+		padding: 18px;
 		overflow: hidden;
 
 	}
-	.textoServicio{
-		text-align: left;
-		font-size: 0.7em;
-		color: grey;
-}
+	.proyectoInterior{
+		position:relative;
+		margin-top:5%;
+		width: 300px;
+		height: 190px;
+		box-shadow: 0px 0px 9px #233d58 ;
+	}
+	.skills{
+		position: relative;
+		color: black;
+		background: #eff5f5;
+		display: inline-block;
+		text-align: justify;
+		margin: red;
+		font-size: 30px;
+		line-height: 15px;
+		margin: 20px;
+		padding: 0px;
+		box-shadow: 0px 0px 9px #233d58 ;
+		width: 40%;
+		height: 1050px;
+		overflow: hidden;
+	}
+	.subtitulo2{
+		font-size: 1em;
+		color: #e6b800;
+		margin-left: 20px;
+		text-align: center;
 
-.skills{
-	position: relative;
-	height: 600px;
-	width: 600px;
-	color: black;
-	display: inline-block;
-	text-align: justify;
-	margin: red;
-	font-size: 1.4em;
-	line-height: 40px;
-	margin: 20px;
-	padding: 25px;
-	box-shadow: 0px 0px 9px #233d58 ;
-	overflow: hidden;
 }
+	.fondoSobreMi{
+		background: white;
+		background-attachment: fixed;
+		background-image: url("../img/barcelona.jpg");
+		box-shadow: 0px 0px 9px #233d58 ;
+		z-index: 99;
+		position: relative;
+		overflow: hidden;
+	}
+
 	
 
-}
+
+

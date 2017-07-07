@@ -128,7 +128,7 @@
 							<ol class="textoServicio">Diseño y mantenimiento de páginas web</ol>
 							<ol class="textoServicio">Implementación de e-commerce con Wordpress y Prestashop</ol>
 							<ol class="textoServicio">Posicionamiento SEO en motores de búsqueda como Google o Bing</ol>
-							<ol class="textoServicio">Otros servicios relacionados <br><a id="info"href="#contacto"> (consultar aquí)</a></ol>
+							<ol class="textoServicio">Otros servicios relacionados <br><a id="info"href="#contacto">(consultar aquí)</a></ol>
 
 					</div>
 
@@ -202,7 +202,7 @@
 					<p class="texto3" >Le contestaré en la mayor brevedad posible.
 						<br><br> O si lo prefiere contácte conmigo en <strong>cjimeneztic@gmail.com</strong>
 					</p>
-					</center>
+				
 					<br>
 					<div id="error"><? echo $error.$exito; ?></div>
 				
@@ -216,6 +216,7 @@
 					<br><br>
 					<input type="submit" value="Enviar" class="boton" ;>
 					<br><br>
+						</center>
 			
 			</form>
 		</section>
@@ -248,17 +249,14 @@
 
 			}) 
    		 </script>
-			<div>
-				<a  href="#contacto" class="icon-envelop"></a>
-			</div>
-		
+			
 
 
 
 	</body>
 	<footer>
 		
-			<br><br><br><p class="texto2">.-  Web hecha íntegra y excusivamente con html5/css3 y Javascript, siguiendo las técnicas y directrices de responsive design, mobile first y posicionamiento SEO  .-
+			<br><br><br><p class="texto2">.-  Web hecha íntegra y excusivamente con html5/css3 y Javascript, PHP y Jquery para las validaciones del formulario, siguiendo las técnicas y directrices de responsive design, mobile first y posicionamiento SEO  .-
 			
 			<br><center><p class="texto2">&copy;2017 Todos los derechos reservados</p></center>
 			
@@ -267,4 +265,9 @@
 		
 	
 	</footer>
+
+			<div>
+				<a  href="#contacto" class="icon-envelop"></a>
+			</div>
+		
 </html>
