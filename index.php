@@ -106,6 +106,7 @@
 					<div class="servicios"> 
 						<figure class="icon-cogs"></figure>
 						<p class="textoGrande"> Servicio técnico </p>
+						<hr>
 							<ol class="textoServicio">Reparación de ordenadores y dispositivos móviles </ol>
 							<ol class="textoServicio">Mantenimiento de sistemas de empresas y particulares</ol>
 							<ol class="textoServicio">Servidores de datos, aplicaciones y correo electrónico</ol>
@@ -121,6 +122,7 @@
 						
 						<figure class="icon-earth"></figure>
 						<p class="textoGrande"> Desarrollo web </p>	
+						<hr>
 							<ol class="textoServicio">Registro de dominios</ol>
 							<ol class="textoServicio">Gestión de hostings</ol>
 							<ol class="textoServicio">Diseño y mantenimiento de páginas web</ol>
@@ -177,7 +179,7 @@
 				</div>
 
 				<div class="skills">
-					<p class="subtitulo2">Skills</p>
+					<p class="subtitulo2">Habilidades</p>
 					<p class="textoGrande">
 					 Lenguajes de <strong>programación y desarrollo web </strong>como C, Java, Python, SQL, HTML5/CSS3, Javascript. <br>
 					 GNU/Linux, Windows XP/7/Vista/8/10, Android, MACOSX, iOS.<br></p>
@@ -210,7 +212,7 @@
 					<br>
 					
 					<input   type="email" name="email" id="email" placeholder="Un email de contacto" ><br><br>
-					<textarea type="text" name="cuerpo" id="cuerpo" placeholder="Cuerpo del mensaje" ></textarea><br>
+					<textarea type="text" name="cuerpo" id="cuerpo" placeholder="Mensaje" ></textarea><br>
 					<br><br>
 					<input type="submit" value="Enviar" class="boton" ;>
 					<br><br>
