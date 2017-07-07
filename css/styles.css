@@ -927,6 +927,7 @@ hr {
 		background: white;
 		background-attachment: fixed;
 		background-image: url("../img/barcelona.jpg");
+		background-repeat: no-repeat;
 		box-shadow: 0px 0px 9px #233d58 ;
 		z-index: 99;
 		position: relative;
@@ -943,6 +944,12 @@ hr {
 	}
 	#contacto{
 		padding-top: 60px;
+	}
+	.boton{
+		width: 150px;
+		border-radius: 5%;
+		border: none;
+
 	}
 
 	
