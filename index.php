@@ -3,7 +3,7 @@
 <html lang="es">
 	<head>
 		<meta charset="utf-8">
-		<title>Cristian Jiménez Ingeniero Técnico en Informático </title>
+		<title>Cristian Jiménez Ingeniero Técnico en Informática </title>
 		<meta name="owner" content="Cristian Jiménez">
 		<meta name="author" content="Cristian Jiménez">
 		<link rel="stylesheet" href="css/styles.css">
@@ -107,13 +107,12 @@
 						<p class="textoGrande"> Servicio técnico </p>
 						<hr>
 							<ol class="textoServicio">Reparación de ordenadores y dispositivos móviles </ol>
-							<ol class="textoServicio">Mantenimiento de sistemas de empresas y particulares</ol>
-							<ol class="textoServicio">Servidores de datos, aplicaciones y correo electrónico</ol>
+							<ol class="textoServicio">Mantenimiento de sistemas y redes en empresas y particulares</ol>
 							<ol class="textoServicio">Asesoramiento y consultoría tecnológica</ol>
-							<ol class="textoServicio">Mantenimiento adaptado a la necesidad de su empresa</ol>
+							<ol class="textoServicio">Mantenimiento adaptado a la necesidad del usuario</ol>
 							<ol class="textoServicio">Instalación de todo tipo de software</ol>
 							<ol class="textoServicio">Antenas y descodificadores</ol>
-							<ol class="textoServicio">Auditoría de seguridad</ol>
+							<ol class="textoServicio">Seguridad informática</ol>
 						
 					</div>
 					
@@ -122,9 +121,9 @@
 						<figure class="icon-earth"></figure>
 						<p class="textoGrande"> Desarrollo web </p>	
 						<hr>
+							<ol class="textoServicio">Diseño y mantenimiento de páginas web</ol>
 							<ol class="textoServicio">Registro de dominios</ol>
 							<ol class="textoServicio">Gestión de hostings</ol>
-							<ol class="textoServicio">Diseño y mantenimiento de páginas web</ol>
 							<ol class="textoServicio">Implementación de e-commerce con Wordpress y Prestashop</ol>
 							<ol class="textoServicio">Posicionamiento SEO en motores de búsqueda como Google o Bing</ol>
 							<ol class="textoServicio">Otros servicios relacionados <br><br><a id="info" href="#contacto">(consultar aquí)</a></ol>
@@ -149,10 +148,10 @@
 				<p class="textoGrande">Libro "Seguridad en redes y sistemas"</p>
 				<img src="img/itsecurity.jpg" class="proyectoInterior">
 				<p class="textoGrande2">Documento propio basado en el trabajo final de carrera (2017) dónde se obtuvo la nota máxima. <br>Es un libro dónde se recopilan un gran número de técnicas y áreas de seguridad informática. Tambíen se icluyen algunas pruevas de concepto. <br>Documento en revisión constante.</p>
-				<a href=".." class="link"> Descarga pdf </a>
+				<a href="" class="link"> Próximamente disponible </a>
 			</div>
 			<div class="proyecto"> 
-				<p class="textoGrande">Próximamente</p>
+				<p class="textoGrande">Otros proyectos</p>
 				<img src="img/proximamente.png" class="proyectoInterior">
 				<p class="textoGrande">Próximos proyectos en desarrollo</p>
 				
@@ -166,27 +165,29 @@
 		
 			<center class="fondoSobreMi">
 				<div class="skills">
-					<p class="subtitulo2">Mi experiencia</p>
+					<p class="subtitulo2">Estudios y experiencia </p>
+					<p class="textoGrande"><strong>Graduado en Ingeniería Informática</strong> por la Universidad Oberta de Catalunya en el año 2016.<br></p>
+					<hr>
 					<p class="textoGrande">
 					 <strong>Más de diez años trabajando como técnico informático freelance</strong>, atendiendo las necesidades de todo tipo de usuarios.<br></p>
 					<hr>
 	 				<p class="textoGrande">Más de diez años al frente de un local de restauración.<br></p>
 	 				<hr>
-		 			<p class="textoGrande"><strong>Graduado en Ingeniería Informática</strong> por la Universidad Oberta de Catalunya en el año 2017.<br></p>
-					<hr>
+		 			
+					
 					<p class="textoGrande"> <strong>Master en Seguridad de las TIC </strong>por la Universidad Oberta de Catalunya ( en curso ).<br></p>
 				</div>
 
 				<div class="skills">
 					<p class="subtitulo2">Habilidades</p>
 					<p class="textoGrande">
-					 Lenguajes de <strong>programación y desarrollo web </strong>como C, Java, Python, SQL, HTML5/CSS3, Javascript. <br>
-					 GNU/Linux, Windows XP/7/Vista/8/10, Android, MACOSX, iOS.<br></p>
+					 Lenguajes de <strong>programación y desarrollo web </strong>en  HTML5/CSS3, Java, Python, SQL, Javascript y C, <br>
+					 sobre GNU/Linux, Miscrosoft Windows, Android, MACOSX e iOS.<br></p>
 					 <hr>
-					 <p class="textoGrande">Administración y gestión de routers Cisco, Wi-fi, switching, LAN/WAN, Firewalls.<br></p> <hr>
-					 <p class="textoGrande"><strong>Bases de datos</strong> como Oracle SQL, PostgreSQL.<br></p> <hr>
-					 <p class="textoGrande"><strong>Administración y desarrollo de CMS</strong> como Prestashop y Wordpress.<br></p> <hr>
-					 <p class="textoGrande"> Microsoft Office, LibreOffice.<br></p> <hr>
+					 <p class="textoGrande">Administración y gestión de redes, Wi-fi, switching, LAN/WAN y Firewalls.<br></p> <hr>
+					 <p class="textoGrande"><strong>Bases de datos</strong> como Oracle SQL o PostgreSQL.<br></p> <hr>
+					 <p class="textoGrande">Administración y desarrollo con CMS <strong>Wordpress y Prestashop.</strong><br></p> <hr>
+					 <p class="textoGrande"> Microsoft Officey LibreOffice.<br></p> <hr>
 					 <p class="textoGrande"> <strong>Mantenimento de hardware</strong> como CPU's, HDD, Motherboards, GPU, etc.<br></p> <hr>
 					 <p class="textoGrande"><strong>Además...</strong><br>SEO, LAMP, GitHub,  VMware, VirtualBOX, Photoshop, Google Apps.<br></p>
 
