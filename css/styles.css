@@ -122,26 +122,81 @@ center{
 	0%{
 		opacity: 0;
 		-moz-transform: translateY(100px);/*Firefox*/
-		-webkit-transform: translateY(100px);/*chrome, safari, android,iOS*/ 
-		-o-transform: translateY(100px);/*Opera*/ 
-		-ms-transform: translateY(100px);/*Explorer*/ 
+		
 	}
 	65%{
 		opacity: 0.7;
 		-moz-transform: translateY(0px);/*Firefox*/
-		-webkit-transform: translateY(0px);/*chrome, safari, android,iOS*/ 
-		-o-transform: translateY(0px);/*Opera*/
-		-ms-transform: translateY(0px);/*Explorer*/
+		
 	}
 	95%{
 		opacity: 1;
 		-moz-transform: translateY(0px);/*Firefox*/
-		-webkit-transform: translateY(0px);/*chrome, safari, android,iOS*/ 
+		
+	}
+
+}
+@-o-keyframes inY{
+	0%{
+		opacity: 0;
+		
+		-o-transform: translateY(100px);/*Opera*/ 
+		
+	}
+	65%{
+		opacity: 0.7;
+		
 		-o-transform: translateY(0px);/*Opera*/
+		
+	}
+	95%{
+		opacity: 1;
+		
+		-o-transform: translateY(0px);/*Opera*/
+		
+	}
+
+}
+
+@-webkit-keyframes inY{
+	0%{
+		opacity: 0;
+		-webkit-transform: translateY(100px);/*chrome, safari, android,iOS*/ 
+	}
+	65%{
+		opacity: 0.7;
+		
+		-webkit-transform: translateY(0px);/*chrome, safari, android,iOS*/ 
+		
+	}
+	95%{
+		opacity: 1;
+		
+		-webkit-transform: translateY(0px);/*chrome, safari, android,iOS*/ 
+		
+	}
+
+}
+
+@-ms-keyframes inY{
+	0%{
+		opacity: 0;
+		
+		-ms-transform: translateY(100px);/*Explorer*/ 
+	}
+	65%{
+		opacity: 0.7;
+		
+		-ms-transform: translateY(0px);/*Explorer*/
+	}
+	95%{
+		opacity: 1;
+		
 		-ms-transform: translateY(0px);/*Explorer*/
 	}
 
 }
+
 
 
 
@@ -158,14 +213,12 @@ footer{
 
 #cabecera{
 	margin-top: 70px;
-	padding-top: -60px;
 	background-image: url("../img/teclado.jpg");
-	/*background-attachment: fixed;*/
 	box-shadow: 0px 0px 9px #233d58 ;
 	position: relative;
 	width: 100%;
 	height: 1000px;
-	top: 9px;
+	top: -20px;
 	overflow: hidden;
 
 }
@@ -181,7 +234,7 @@ footer{
 #linkmenu{
 	cursor: pointer;
 	margin-left: 10px;
-	font-size: 90px;
+	font-size: 3em;
 	color: white;
 	position: relative;
 	top: 10px;
@@ -395,7 +448,7 @@ footer{
 .texto3{
 	color: black;
 	text-align: center;
-	font-size: 3em;
+	font-size: 50px;
 	margin-left: 15px;
 	margin-right: 35px;
 }
@@ -425,42 +478,11 @@ input,textarea{
     margin: 50px;
 
 }
-input::-webkit-input-placeholder {
-    font-size: 50px;
-}
-input::-moz-placeholder {
-    font-size: 50px;
-}
-}
-input::-o-placeholder {
-    font-size: 50px;
-}
-}
-input::-ms-placeholder {
-    font-size: 50px;
-}
-input:focus{
-	font-size: 50px;
-}
-textarea:focus{
-	font-size: 50px;
-}
-textarea::-webkit-input-placeholder {
-    font-size: 50px;
-}
-textarea::-moz-placeholder {
-    font-size: 50px;
-}
-textarea::-o-placeholder {
-    font-size: 50px;
-}
-textarea::-ms-placeholder {
-    font-size: 50px;
-}
 
 form{
 	padding-left: 40px;
 	overflow: hidden;
+	font-size: 40px;
 }
 
 .informe{
@@ -548,7 +570,7 @@ hr {
   	content: "\e945";
   	position: fixed;
   	border-radius: 50%;
-	top: 80%;
+	top: 1100px;
 	left: 750px;
   	color: white;
   	font-size: 170px;
@@ -601,6 +623,18 @@ hr {
 .icon-whatsapp:before {
   content: "\ea93";
 }
+
+/*icono menu*/
+.icon-menu:before{
+	content: "\e9bd";
+	font-size: 130px;
+	margin: 20px;;
+	color: white;
+	
+}
+
+
+
 #info{
 	color: grey;
 	font-size: 1.1em;
@@ -668,6 +702,7 @@ hr {
 		background: #eff5f5;
 		padding: 0px;
 		margin: 0px;
+		box-shadow: 0px, 0px, 0px;
 
 	}
 	header{
@@ -675,11 +710,14 @@ hr {
 		margin: 0px;
 		background: #eff5f5;
 		overflow: hidden;
+
 	}
 	#cabecera{
 		position: relative;
-		top: -50px;
+		top: -86px;
 		width: 100%;
+		background-attachment: fixed;
+
 
 	}
 	#titulo{
@@ -724,6 +762,7 @@ hr {
 	}
 	#backgroundMenu{
 		display: none;
+
 	}
 
 	#menu{
@@ -743,12 +782,16 @@ hr {
 		vertical-align: center;
 		padding-top: 10px;
 		padding-bottom: 10px;
+		box-shadow: 0px 0px 0px #233d58;
+		overflow: hidden;
 	
 	}
 	.textoMenu{
 		color: white;
+		overflow: hidden;
 		top: 10px;
 		text-decoration: none;
+		text-shadow: 0px 0px 9px grey;
 	}
 	#atras{
 		display: none;
@@ -778,30 +821,32 @@ hr {
 }	
 
 /*icono sobre */
-.icon-envelop:before {
-  	content: "\e945";
-  	position: fixed;
-  	border-radius: 50%;
-	top: 80%;
-	left: 1550px;
-  	color: white;
-  	font-size: 110px;
-  	padding-top: 15px;
-  	padding-left: 20px;
-  	margin-right: 40px;
-  	z-index: 99999;
-  	background-color: red;
-	position: fixed;
-	width: 130px;
-	height: 130px;
-	box-shadow: 0px 0px 9px #233d58 ;
-	text-align: left;
-}	
+	.icon-envelop:before {
+	  	content: "\e945";
+	  	position: fixed;
+	  	border-radius: 50%;
+		top:600px;
+		left: 1550px;
+	  	color: white;
+	  	font-size: 110px;
+	  	padding-top: 15px;
+	  	padding-left: 20px;
+	  	margin-right: 40px;
+	  	z-index: 99999;
+	  	background-color: red;
+		position: fixed;
+		width: 130px;
+		height: 130px;
+		box-shadow: 0px 0px 9px #233d58 ;
+		text-align: left;
+	}	
 
 	.textoServicio{
 		text-align: left;
-		font-size: 0.8em;
+		font-size: 30px;
 		color: grey;
+		padding-bottom: 10px;
+		margin-bottom: 10px;
 	}
 	
 
@@ -814,31 +859,12 @@ hr {
 	    padding: 5px;
 	    border-radius: 2%;
 	    margin: 90px;
-
-	}
-	input::-webkit-input-placeholder {
-	    font-size: 30px;
-	}
-	input::-moz-placeholder {
-	    font-size: 30px;
-	}
-	input:focus{
-		font-size: 30px;
-	}
-	textarea:focus{
-		font-size: 30px;
-	}
-	textarea::-webkit-input-placeholder {
-	    font-size: 30px;
-	}
-	textarea::-moz-placeholder {
-	    font-size: 30px;
-	}
+}
 	.textoGrande{
-		font-size: 30px;
+		font-size: 25px;
 		font-weight: 10px;
 		margin: 40px;
-		line-height: 30px;
+		line-height: 35px;
 	}
 
 	.textoGrande2{
@@ -917,7 +943,7 @@ hr {
 		overflow: hidden;
 	}
 	.subtitulo2{
-		font-size: 1em;
+		font-size: 40px;
 		color: #e6b800;
 		margin-left: 20px;
 		text-align: center;

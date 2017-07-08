@@ -76,7 +76,7 @@
 					</div>
 				</nav>
 				<div id="backgroundMenu">
-					<a id= "linkmenu" onClick= "mostrarMenu()" > MENU </a>
+					<a class="icon-menu" onClick= "mostrarMenu()" ></a>
 				</div>
 				
 			</h2>
