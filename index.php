@@ -1,4 +1,46 @@
+<?php
+ 
+	$error= "";
+	$exito= "";
+	if($_POST){
+		if(!$_POST["nombre"]){
+			$error.="No ha indicado ningún nombre. <br>";
+		}
+			
+		if(!$_POST["asunto"]){
+			$error.="No ha indicado ningún asunto. <br>";
+		}
 
+		if(!$_POST["cuerpo"]){
+			$error.="No has rellenado el campo cuerpo del mensaje. <br>";
+		}
+
+		if(!$_POST["email"] && filter_var($_POST["email"], FILTER_VALIDATE_EMAIL) === false){
+			$error.= "Revisa tu correo electrónico. <br>";
+		}
+
+		if($error!=""){
+			$error.="Hubo algún error al rellenar el formulario.<br>";
+		}
+		
+		else{
+
+			$destinatario ="cjimeneztic@gmail.com";
+			$asunto =$_POST["asunto"];
+			$cuerpo =$_POST["cuerpo"];
+			$emisor ="From: ".$_POST["email"];
+
+			if ( mail($destinatario, $asunto, $cuerpo, $emisor)){
+				$exito ="<div>Su mensaje ha sido enviado correctamente, me podré en contacto comn usted en breve. <br> Grácias por contactar.</div>";
+			}
+			else{
+				$error='<div class="informe">Su mensaje no ha podido ser enviado, intentelo más tarde o si lo prefiere envie un email desde su proveedor de email habitual a cjimeneztic@gmail.com';
+			}
+
+		}
+
+	}
+?>
 <!DOCTYPE html>
 <html lang="es">
 	<head>
@@ -147,13 +189,13 @@
 			<div class="proyecto"> 
 				<p class="textoGrande">Libro "Seguridad en redes y sistemas"</p>
 				<img src="img/itsecurity.jpg" class="proyectoInterior">
-				<p class="textoGrande2">Documento propio basado en el trabajo final de carrera (2017) dónde se obtuvo la nota máxima. <br>Es un libro dónde se recopilan un gran número de técnicas y áreas de seguridad informática. Tambíen se icluyen algunas pruevas de concepto. <br>Documento en revisión constante.</p>
-				<a href="" class="link"> Próximamente disponible </a>
+				<p class="textoGrande2">Documento propio basado en el trabajo final de carrera (2017) dónde se obtuvo la nota máxima. <br>Es un libro dónde se recopilan un gran número de técnicas y áreas de seguridad informática. Tambíen se icluyen algunas pruevas de concepto. <br>Documento en revisión constante.</p><br>
+				<a href="http://hdl.handle.net/10609/52944" target="blank" class="link">Acceder </a>
 			</div>
 			<div class="proyecto"> 
 				<p class="textoGrande">Otros proyectos</p>
 				<img src="img/proximamente.png" class="proyectoInterior">
-				<p class="textoGrande">Próximos proyectos en desarrollo</p>
+				<p class="textoGrande">Próximamente proyectos en desarrollo</p>
 				
 			</div>
 			
